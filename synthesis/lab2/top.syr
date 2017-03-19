@@ -1,18 +1,21 @@
-Release 14.6 - xst P.68d (nt)
+Release 14.6 - xst P.68d (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
---> Parameter TMPDIR set to xst/projnav.tmp
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total CPU time to Xst completion: 0.05 secs
  
---> Parameter xsthdpdir set to xst
+--> 
+Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total CPU time to Xst completion: 0.05 secs
  
---> Reading design: top.prj
+--> 
+Reading design: top.prj
 
 TABLE OF CONTENTS
   1) Synthesis Options Summary
@@ -108,40 +111,40 @@ Cores Search Directories           : {"../../source/coregen/char_rom"  }
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Parsing VHDL file "C:\Users\student.DOMAIN\Desktop\lprs2RA54\lab2\source\rtl\vhdl\vga_sync.vhd" into library work
+Parsing VHDL file "/home/mix/Desktop/LPRS2/lab2/source/rtl/vhdl/vga_sync.vhd" into library work
 Parsing entity <vga_sync>.
 Parsing architecture <rtl> of entity <vga_sync>.
-Parsing VHDL file "C:\Users\student.DOMAIN\Desktop\lprs2RA54\lab2\source\coregen\dcm75MHz.vhd" into library work
+Parsing VHDL file "/home/mix/Desktop/LPRS2/lab2/source/coregen/dcm75MHz.vhd" into library work
 Parsing entity <dcm75MHz>.
 Parsing architecture <xilinx> of entity <dcm75mhz>.
-Parsing VHDL file "C:\Users\student.DOMAIN\Desktop\lprs2RA54\lab2\source\coregen\dcm50MHz.vhd" into library work
+Parsing VHDL file "/home/mix/Desktop/LPRS2/lab2/source/coregen/dcm50MHz.vhd" into library work
 Parsing entity <dcm50MHz>.
 Parsing architecture <xilinx> of entity <dcm50mhz>.
-Parsing VHDL file "C:\Users\student.DOMAIN\Desktop\lprs2RA54\lab2\source\coregen\dcm25MHz.vhd" into library work
+Parsing VHDL file "/home/mix/Desktop/LPRS2/lab2/source/coregen/dcm25MHz.vhd" into library work
 Parsing entity <dcm25MHz>.
 Parsing architecture <xilinx> of entity <dcm25mhz>.
-Parsing VHDL file "C:\Users\student.DOMAIN\Desktop\lprs2RA54\lab2\source\coregen\dcm108MHz.vhd" into library work
+Parsing VHDL file "/home/mix/Desktop/LPRS2/lab2/source/coregen/dcm108MHz.vhd" into library work
 Parsing entity <dcm108MHz>.
 Parsing architecture <xilinx> of entity <dcm108mhz>.
-Parsing VHDL file "C:\Users\student.DOMAIN\Desktop\lprs2RA54\lab2\source\coregen\char_rom\char_rom_def.vhd" into library work
+Parsing VHDL file "/home/mix/Desktop/LPRS2/lab2/source/coregen/char_rom/char_rom_def.vhd" into library work
 Parsing entity <char_rom_def>.
 Parsing architecture <char_rom_def_a> of entity <char_rom_def>.
-Parsing VHDL file "C:\Users\student.DOMAIN\Desktop\lprs2RA54\lab2\source\rtl\vhdl\vga.vhd" into library work
+Parsing VHDL file "/home/mix/Desktop/LPRS2/lab2/source/rtl/vhdl/vga.vhd" into library work
 Parsing entity <vga>.
 Parsing architecture <rtl> of entity <vga>.
-Parsing VHDL file "C:\Users\student.DOMAIN\Desktop\lprs2RA54\lab2\source\rtl\vhdl\text_mem.vhd" into library work
+Parsing VHDL file "/home/mix/Desktop/LPRS2/lab2/source/rtl/vhdl/text_mem.vhd" into library work
 Parsing entity <text_mem>.
 Parsing architecture <arc_text_mem> of entity <text_mem>.
-Parsing VHDL file "C:\Users\student.DOMAIN\Desktop\lprs2RA54\lab2\source\rtl\vhdl\graphics_mem.vhd" into library work
+Parsing VHDL file "/home/mix/Desktop/LPRS2/lab2/source/rtl/vhdl/graphics_mem.vhd" into library work
 Parsing entity <graphics_mem>.
 Parsing architecture <arc_graphics_mem> of entity <graphics_mem>.
-Parsing VHDL file "C:\Users\student.DOMAIN\Desktop\lprs2RA54\lab2\source\rtl\vhdl\char_rom.vhd" into library work
+Parsing VHDL file "/home/mix/Desktop/LPRS2/lab2/source/rtl/vhdl/char_rom.vhd" into library work
 Parsing entity <char_rom>.
 Parsing architecture <Behavioral> of entity <char_rom>.
-Parsing VHDL file "C:\Users\student.DOMAIN\Desktop\lprs2RA54\lab2\source\rtl\vhdl\vga_top.vhd" into library work
+Parsing VHDL file "/home/mix/Desktop/LPRS2/lab2/source/rtl/vhdl/vga_top.vhd" into library work
 Parsing entity <vga_top>.
 Parsing architecture <rtl> of entity <vga_top>.
-Parsing VHDL file "C:\Users\student.DOMAIN\Desktop\lprs2RA54\lab2\source\rtl\vhdl\top.vhd" into library work
+Parsing VHDL file "/home/mix/Desktop/LPRS2/lab2/source/rtl/vhdl/top.vhd" into library work
 Parsing entity <top>.
 Parsing architecture <rtl> of entity <top>.
 
@@ -150,14 +153,14 @@ Parsing architecture <rtl> of entity <top>.
 =========================================================================
 
 Elaborating entity <top> (architecture <rtl>) with generics from library <work>.
-WARNING:HDLCompiler:1127 - "C:\Users\student.DOMAIN\Desktop\lprs2RA54\lab2\source\rtl\vhdl\top.vhd" Line 163: Assignment to message_lenght ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\student.DOMAIN\Desktop\lprs2RA54\lab2\source\rtl\vhdl\top.vhd" Line 168: Assignment to graphics_lenght ignored, since the identifier is never used
-WARNING:HDLCompiler:89 - "C:\Users\student.DOMAIN\Desktop\lprs2RA54\lab2\source\rtl\vhdl\top.vhd" Line 106: <oddr2> remains a black-box since it has no binding entity.
+WARNING:HDLCompiler:1127 - "/home/mix/Desktop/LPRS2/lab2/source/rtl/vhdl/top.vhd" Line 170: Assignment to message_lenght ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/mix/Desktop/LPRS2/lab2/source/rtl/vhdl/top.vhd" Line 175: Assignment to graphics_lenght ignored, since the identifier is never used
+WARNING:HDLCompiler:89 - "/home/mix/Desktop/LPRS2/lab2/source/rtl/vhdl/top.vhd" Line 106: <oddr2> remains a black-box since it has no binding entity.
 
 Elaborating entity <vga_top> (architecture <rtl>) with generics from library <work>.
 
 Elaborating entity <vga> (architecture <rtl>) with generics from library <work>.
-WARNING:HDLCompiler:89 - "C:\Users\student.DOMAIN\Desktop\lprs2RA54\lab2\source\rtl\vhdl\vga.vhd" Line 123: <srl16> remains a black-box since it has no binding entity.
+WARNING:HDLCompiler:89 - "/home/mix/Desktop/LPRS2/lab2/source/rtl/vhdl/vga.vhd" Line 123: <srl16> remains a black-box since it has no binding entity.
 
 Elaborating entity <vga_sync> (architecture <rtl>) with generics from library <work>.
 
@@ -166,45 +169,70 @@ Elaborating entity <dcm25MHz> (architecture <xilinx>) from library <work>.
 Elaborating entity <char_rom> (architecture <Behavioral>) from library <work>.
 
 Elaborating entity <char_rom_def> (architecture <char_rom_def_a>) from library <work>.
-INFO:HDLCompiler:679 - "C:\Users\student.DOMAIN\Desktop\lprs2RA54\lab2\source\rtl\vhdl\char_rom.vhd" Line 77. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "/home/mix/Desktop/LPRS2/lab2/source/rtl/vhdl/char_rom.vhd" Line 77. Case statement is complete. others clause is never selected
 
 Elaborating entity <text_mem> (architecture <arc_text_mem>) with generics from library <work>.
 
 Elaborating entity <graphics_mem> (architecture <arc_graphics_mem>) with generics from library <work>.
-WARNING:HDLCompiler:1127 - "C:\Users\student.DOMAIN\Desktop\lprs2RA54\lab2\source\rtl\vhdl\vga_top.vhd" Line 301: Assignment to grid_size ignored, since the identifier is never used
-WARNING:HDLCompiler:634 - "C:\Users\student.DOMAIN\Desktop\lprs2RA54\lab2\source\rtl\vhdl\top.vhd" Line 146: Net <pixel_address[19]> does not have a driver.
-WARNING:HDLCompiler:634 - "C:\Users\student.DOMAIN\Desktop\lprs2RA54\lab2\source\rtl\vhdl\top.vhd" Line 147: Net <pixel_value[31]> does not have a driver.
-WARNING:HDLCompiler:634 - "C:\Users\student.DOMAIN\Desktop\lprs2RA54\lab2\source\rtl\vhdl\top.vhd" Line 148: Net <pixel_we> does not have a driver.
+WARNING:HDLCompiler:1127 - "/home/mix/Desktop/LPRS2/lab2/source/rtl/vhdl/vga_top.vhd" Line 301: Assignment to grid_size ignored, since the identifier is never used
+WARNING:HDLCompiler:92 - "/home/mix/Desktop/LPRS2/lab2/source/rtl/vhdl/top.vhd" Line 312: word_address_1 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/mix/Desktop/LPRS2/lab2/source/rtl/vhdl/top.vhd" Line 314: word_address_2 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/mix/Desktop/LPRS2/lab2/source/rtl/vhdl/top.vhd" Line 316: word_address_3 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/mix/Desktop/LPRS2/lab2/source/rtl/vhdl/top.vhd" Line 318: word_address_4 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/mix/Desktop/LPRS2/lab2/source/rtl/vhdl/top.vhd" Line 342: word_address_1 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/mix/Desktop/LPRS2/lab2/source/rtl/vhdl/top.vhd" Line 343: word_address_2 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/mix/Desktop/LPRS2/lab2/source/rtl/vhdl/top.vhd" Line 344: word_address_3 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/mix/Desktop/LPRS2/lab2/source/rtl/vhdl/top.vhd" Line 345: word_address_4 should be on the sensitivity list of the process
+WARNING:HDLCompiler:634 - "/home/mix/Desktop/LPRS2/lab2/source/rtl/vhdl/top.vhd" Line 153: Net <pixel_address[19]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/mix/Desktop/LPRS2/lab2/source/rtl/vhdl/top.vhd" Line 154: Net <pixel_value[31]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/mix/Desktop/LPRS2/lab2/source/rtl/vhdl/top.vhd" Line 155: Net <pixel_we> does not have a driver.
 
 =========================================================================
 *                           HDL Synthesis                               *
 =========================================================================
 
 Synthesizing Unit <top>.
-    Related source file is "C:\Users\student.DOMAIN\Desktop\lprs2RA54\lab2\source\rtl\vhdl\top.vhd".
+    Related source file is "/home/mix/Desktop/LPRS2/lab2/source/rtl/vhdl/top.vhd".
         RES_TYPE = 1
         TEXT_MEM_DATA_WIDTH = 6
         GRAPH_MEM_DATA_WIDTH = 32
-INFO:Xst:3210 - "C:\Users\student.DOMAIN\Desktop\lprs2RA54\lab2\source\rtl\vhdl\top.vhd" line 199: Output port <dir_pixel_row_o> of the instance <vga_top_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\student.DOMAIN\Desktop\lprs2RA54\lab2\source\rtl\vhdl\top.vhd" line 199: Output port <vga_rst_n_o> of the instance <vga_top_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/mix/Desktop/LPRS2/lab2/source/rtl/vhdl/top.vhd" line 206: Output port <dir_pixel_row_o> of the instance <vga_top_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/mix/Desktop/LPRS2/lab2/source/rtl/vhdl/top.vhd" line 206: Output port <vga_rst_n_o> of the instance <vga_top_i> is unconnected or connected to loadless signal.
 WARNING:Xst:653 - Signal <pixel_address> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <pixel_value> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <pixel_we> is used but never assigned. This sourceless signal will be automatically connected to value GND.
-    Found 11-bit comparator greater for signal <dir_pixel_column[10]_GND_5_o_LessThan_13_o> created at line 254
-    Found 11-bit comparator greater for signal <dir_pixel_column[10]_GND_5_o_LessThan_15_o> created at line 255
-    Found 11-bit comparator greater for signal <dir_pixel_column[10]_GND_5_o_LessThan_17_o> created at line 256
-    Found 11-bit comparator greater for signal <dir_pixel_column[10]_GND_5_o_LessThan_19_o> created at line 257
-    Found 11-bit comparator greater for signal <dir_pixel_column[10]_GND_5_o_LessThan_21_o> created at line 258
-    Found 11-bit comparator greater for signal <dir_pixel_column[10]_GND_5_o_LessThan_23_o> created at line 259
-    Found 11-bit comparator greater for signal <dir_pixel_column[10]_GND_5_o_LessThan_61_o> created at line 278
+    Found 14-bit register for signal <char_address>.
+    Found 1-bit register for signal <frame_signal>.
+    Found 14-bit register for signal <frame_counter>.
+    Found 14-bit adder for signal <char_address[13]_GND_5_o_add_69_OUT> created at line 302.
+    Found 14-bit adder for signal <frame_counter[13]_GND_5_o_add_81_OUT> created at line 328.
+    Found 14-bit adder for signal <word_address_1[13]_frame_counter[13]_add_85_OUT> created at line 342.
+    Found 14-bit adder for signal <word_address_2[13]_frame_counter[13]_add_86_OUT> created at line 343.
+    Found 14-bit adder for signal <word_address_3[13]_frame_counter[13]_add_87_OUT> created at line 344.
+    Found 14-bit adder for signal <word_address_4[13]_frame_counter[13]_add_88_OUT> created at line 345.
+    Found 11-bit comparator greater for signal <dir_pixel_column[10]_GND_5_o_LessThan_13_o> created at line 261
+    Found 11-bit comparator greater for signal <dir_pixel_column[10]_GND_5_o_LessThan_15_o> created at line 262
+    Found 11-bit comparator greater for signal <dir_pixel_column[10]_GND_5_o_LessThan_17_o> created at line 263
+    Found 11-bit comparator greater for signal <dir_pixel_column[10]_GND_5_o_LessThan_19_o> created at line 264
+    Found 11-bit comparator greater for signal <dir_pixel_column[10]_GND_5_o_LessThan_21_o> created at line 265
+    Found 11-bit comparator greater for signal <dir_pixel_column[10]_GND_5_o_LessThan_23_o> created at line 266
+    Found 11-bit comparator greater for signal <dir_pixel_column[10]_GND_5_o_LessThan_61_o> created at line 285
+    Found 14-bit comparator greater for signal <char_address[13]_GND_5_o_LessThan_69_o> created at line 301
+    Found 14-bit comparator equal for signal <char_address[13]_word_address_1[13]_equal_73_o> created at line 312
+    Found 14-bit comparator equal for signal <char_address[13]_word_address_2[13]_equal_74_o> created at line 314
+    Found 14-bit comparator equal for signal <char_address[13]_word_address_3[13]_equal_75_o> created at line 316
+    Found 14-bit comparator equal for signal <char_address[13]_word_address_4[13]_equal_76_o> created at line 318
+    Found 14-bit comparator greater for signal <frame_counter[13]_GND_5_o_LessThan_81_o> created at line 327
     Summary:
-	inferred   7 Comparator(s).
-	inferred  14 Multiplexer(s).
+	inferred   6 Adder/Subtractor(s).
+	inferred  29 D-type flip-flop(s).
+	inferred  13 Comparator(s).
+	inferred  22 Multiplexer(s).
 Unit <top> synthesized.
-WARNING:Xst:2972 - "C:\Users\student.DOMAIN\Desktop\lprs2RA54\lab2\source\rtl\vhdl\vga_top.vhd" line 251. All outputs of instance <graphics_mem_i> of block <graphics_mem> are unconnected in block <vga_top>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/mix/Desktop/LPRS2/lab2/source/rtl/vhdl/vga_top.vhd" line 251. All outputs of instance <graphics_mem_i> of block <graphics_mem> are unconnected in block <vga_top>. Underlying logic will be removed.
 
 Synthesizing Unit <vga_top>.
-    Related source file is "C:\Users\student.DOMAIN\Desktop\lprs2RA54\lab2\source\rtl\vhdl\vga_top.vhd".
+    Related source file is "/home/mix/Desktop/LPRS2/lab2/source/rtl/vhdl/vga_top.vhd".
         H_RES = 640
         V_RES = 480
         MEM_ADDR_WIDTH = 14
@@ -221,7 +249,7 @@ Synthesizing Unit <vga_top>.
 Unit <vga_top> synthesized.
 
 Synthesizing Unit <vga>.
-    Related source file is "C:\Users\student.DOMAIN\Desktop\lprs2RA54\lab2\source\rtl\vhdl\vga.vhd".
+    Related source file is "/home/mix/Desktop/LPRS2/lab2/source/rtl/vhdl/vga.vhd".
         RESOLUTION_TYPE = 1
         H_RES = 640
         V_RES = 480
@@ -231,7 +259,7 @@ Synthesizing Unit <vga>.
 Unit <vga> synthesized.
 
 Synthesizing Unit <vga_sync>.
-    Related source file is "C:\Users\student.DOMAIN\Desktop\lprs2RA54\lab2\source\rtl\vhdl\vga_sync.vhd".
+    Related source file is "/home/mix/Desktop/LPRS2/lab2/source/rtl/vhdl/vga_sync.vhd".
         HORIZONTAL_RES = 640
         VERTICAL_RES = 480
         FRAME_SIZE = 4
@@ -274,20 +302,20 @@ Synthesizing Unit <vga_sync>.
 Unit <vga_sync> synthesized.
 
 Synthesizing Unit <dcm25MHz>.
-    Related source file is "C:\Users\student.DOMAIN\Desktop\lprs2RA54\lab2\source\coregen\dcm25MHz.vhd".
+    Related source file is "/home/mix/Desktop/LPRS2/lab2/source/coregen/dcm25MHz.vhd".
     Summary:
 	no macro.
 Unit <dcm25MHz> synthesized.
 
 Synthesizing Unit <char_rom>.
-    Related source file is "C:\Users\student.DOMAIN\Desktop\lprs2RA54\lab2\source\rtl\vhdl\char_rom.vhd".
+    Related source file is "/home/mix/Desktop/LPRS2/lab2/source/rtl/vhdl/char_rom.vhd".
     Found 1-bit 8-to-1 multiplexer for signal <rom_mux_output_o> created at line 67.
     Summary:
 	inferred   1 Multiplexer(s).
 Unit <char_rom> synthesized.
 
 Synthesizing Unit <text_mem>.
-    Related source file is "C:\Users\student.DOMAIN\Desktop\lprs2RA54\lab2\source\rtl\vhdl\text_mem.vhd".
+    Related source file is "/home/mix/Desktop/LPRS2/lab2/source/rtl/vhdl/text_mem.vhd".
         MEM_ADDR_WIDTH = 14
         MEM_DATA_WIDTH = 6
         MEM_SIZE = 4800
@@ -305,7 +333,7 @@ WARNING:Xst:3035 - Index value(s) does not match array range for signal <text_me
 Unit <text_mem> synthesized.
 
 Synthesizing Unit <graphics_mem>.
-    Related source file is "C:\Users\student.DOMAIN\Desktop\lprs2RA54\lab2\source\rtl\vhdl\graphics_mem.vhd".
+    Related source file is "/home/mix/Desktop/LPRS2/lab2/source/rtl/vhdl/graphics_mem.vhd".
         MEM_ADDR_WIDTH = 20
         MEM_DATA_WIDTH = 32
         MEM_SIZE = 307200
@@ -357,23 +385,29 @@ Macro Statistics
  4800x6-bit dual-port RAM                              : 1
 # Multipliers                                          : 1
  11x11-bit multiplier                                  : 1
-# Adders/Subtractors                                   : 3
+# Adders/Subtractors                                   : 9
  11-bit adder                                          : 2
+ 14-bit adder                                          : 6
  22-bit adder                                          : 1
-# Registers                                            : 19
- 1-bit register                                        : 13
+# Registers                                            : 22
+ 1-bit register                                        : 14
  11-bit register                                       : 2
+ 14-bit register                                       : 2
  6-bit register                                        : 1
  8-bit register                                        : 3
-# Comparators                                          : 20
+# Comparators                                          : 26
  11-bit comparator greater                             : 11
  11-bit comparator lessequal                           : 2
  12-bit comparator greater                             : 3
  12-bit comparator lessequal                           : 3
+ 14-bit comparator equal                               : 4
+ 14-bit comparator greater                             : 2
  31-bit comparator greater                             : 1
-# Multiplexers                                         : 20
+# Multiplexers                                         : 28
  1-bit 8-to-1 multiplexer                              : 1
+ 14-bit 2-to-1 multiplexer                             : 5
  31-bit 2-to-1 multiplexer                             : 1
+ 6-bit 2-to-1 multiplexer                              : 3
  8-bit 2-to-1 multiplexer                              : 18
 
 =========================================================================
@@ -396,8 +430,8 @@ INFO:Xst:3226 - The RAM <Mram_text_mem> will be implemented as a BLOCK RAM, abso
     |     mode           | read-first                          |          |
     |     clkA           | connected to signal <clk_i>         | rise     |
     |     weA            | connected to signal <VCC>           | high     |
-    |     addrA          | connected to signal <"0000001100100"> |          |
-    |     diA            | connected to signal <"000011">      |          |
+    |     addrA          | connected to signal <wr_addr_i>     |          |
+    |     diA            | connected to signal <wr_data_i>     |          |
     -----------------------------------------------------------------------
     | optimization       | speed                               |          |
     -----------------------------------------------------------------------
@@ -411,6 +445,11 @@ INFO:Xst:3226 - The RAM <Mram_text_mem> will be implemented as a BLOCK RAM, abso
     | optimization       | speed                               |          |
     -----------------------------------------------------------------------
 Unit <text_mem> synthesized (advanced).
+
+Synthesizing (advanced) Unit <top>.
+The following registers are absorbed into counter <char_address>: 1 register on signal <char_address>.
+The following registers are absorbed into counter <frame_counter>: 1 register on signal <frame_counter>.
+Unit <top> synthesized (advanced).
 
 Synthesizing (advanced) Unit <vga_sync>.
 The following registers are absorbed into counter <h_count_r>: 1 register on signal <h_count_r>.
@@ -429,19 +468,26 @@ Macro Statistics
  4800x6-bit dual-port block RAM                        : 1
 # MACs                                                 : 1
  8x7-to-14-bit MAC                                     : 1
-# Counters                                             : 2
+# Adders/Subtractors                                   : 4
+ 14-bit adder                                          : 4
+# Counters                                             : 4
  11-bit up counter                                     : 2
-# Registers                                            : 37
- Flip-Flops                                            : 37
-# Comparators                                          : 20
+ 14-bit up counter                                     : 2
+# Registers                                            : 38
+ Flip-Flops                                            : 38
+# Comparators                                          : 26
  11-bit comparator greater                             : 11
  11-bit comparator lessequal                           : 2
  12-bit comparator greater                             : 3
  12-bit comparator lessequal                           : 3
+ 14-bit comparator equal                               : 4
+ 14-bit comparator greater                             : 2
  31-bit comparator greater                             : 1
-# Multiplexers                                         : 20
+# Multiplexers                                         : 27
  1-bit 8-to-1 multiplexer                              : 1
+ 14-bit 2-to-1 multiplexer                             : 4
  31-bit 2-to-1 multiplexer                             : 1
+ 6-bit 2-to-1 multiplexer                              : 3
  8-bit 2-to-1 multiplexer                              : 18
 
 =========================================================================
@@ -451,17 +497,23 @@ Macro Statistics
 =========================================================================
 INFO:Xst:2261 - The FF/Latch <green_r_0> in Unit <vga_sync> is equivalent to the following 15 FFs/Latches, which will be removed : <green_r_1> <green_r_2> <green_r_3> <green_r_4> <green_r_5> <green_r_6> <green_r_7> <blue_r_0> <blue_r_1> <blue_r_2> <blue_r_3> <blue_r_4> <blue_r_5> <blue_r_6> <blue_r_7> 
 INFO:Xst:2261 - The FF/Latch <red_r_0> in Unit <vga_sync> is equivalent to the following 7 FFs/Latches, which will be removed : <red_r_1> <red_r_2> <red_r_3> <red_r_4> <red_r_5> <red_r_6> <red_r_7> 
+WARNING:Xst:2170 - Unit top : the following signal(s) form a combinatorial loop: Mcompar_char_address[13]_word_address_1[13]_equal_73_o_cy<0>, Madd_word_address_1[13]_frame_counter[13]_add_85_OUT_lut<0>, word_address_1[13]_frame_counter[13]_add_85_OUT<0>, word_address_1<0>, Mcompar_char_address[13]_word_address_1[13]_equal_73_o_cy<3>, Mcompar_char_address[13]_word_address_1[13]_equal_73_o_lut<0>, char_address[13]_word_address_1[13]_equal_73_o, char_value<5>, Mcompar_char_address[13]_word_address_1[13]_equal_73_o_cy<1>, Mcompar_char_address[13]_word_address_1[13]_equal_73_o_cy<2>.
+WARNING:Xst:2170 - Unit top : the following signal(s) form a combinatorial loop: Mcompar_char_address[13]_word_address_2[13]_equal_74_o_cy<2>, Mcompar_char_address[13]_word_address_2[13]_equal_74_o_cy<3>, Madd_word_address_2[13]_frame_counter[13]_add_86_OUT_lut<0>, char_address[13]_word_address_2[13]_equal_74_o, char_value<4>, Mcompar_char_address[13]_word_address_2[13]_equal_74_o_cy<1>, Mcompar_char_address[13]_word_address_2[13]_equal_74_o_cy<0>, Mcompar_char_address[13]_word_address_2[13]_equal_74_o_lut<0>, word_address_2[13]_frame_counter[13]_add_86_OUT<0>, word_address_2<0>.
+WARNING:Xst:2170 - Unit top : the following signal(s) form a combinatorial loop: Mcompar_char_address[13]_word_address_3[13]_equal_75_o_lut<0>, char_value<1>, word_address_3[13]_frame_counter[13]_add_87_OUT<0>, Mcompar_char_address[13]_word_address_3[13]_equal_75_o_cy<2>, Mcompar_char_address[13]_word_address_3[13]_equal_75_o_cy<1>, Madd_word_address_3[13]_frame_counter[13]_add_87_OUT_lut<0>, Mcompar_char_address[13]_word_address_3[13]_equal_75_o_cy<0>, char_address[13]_word_address_3[13]_equal_75_o, word_address_3<0>, Mcompar_char_address[13]_word_address_3[13]_equal_75_o_cy<3>.
+WARNING:Xst:2170 - Unit top : the following signal(s) form a combinatorial loop: Mcompar_char_address[13]_word_address_4[13]_equal_76_o_cy<0>, Mcompar_char_address[13]_word_address_4[13]_equal_76_o_lut<0>, Mcompar_char_address[13]_word_address_4[13]_equal_76_o_cy<2>, Mcompar_char_address[13]_word_address_4[13]_equal_76_o_cy<3>, word_address_4<0>, char_address[13]_word_address_4[13]_equal_76_o, word_address_4[13]_frame_counter[13]_add_88_OUT<0>, Mcompar_char_address[13]_word_address_4[13]_equal_76_o_cy<1>, Madd_word_address_4[13]_frame_counter[13]_add_88_OUT_lut<0>, char_value<0>.
 
 Optimizing unit <top> ...
 
 Optimizing unit <vga_sync> ...
-INFO:Xst:2399 - RAMs <vga_top_i/text_mem_i/Mram_text_mem2>, <vga_top_i/text_mem_i/Mram_text_mem3> are equivalent, second RAM is removed
+WARNING:Xst:1710 - FF/Latch <char_address_11> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <char_address_12> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <char_address_13> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <vga_top_i/vga_i/vga_sync_i/h_count_r_10> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <vga_top_i/vga_i/vga_sync_i/v_count_r_10> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block top, actual ratio is 0.
+Found area constraint ratio of 100 (+ 5) on block top, actual ratio is 1.
 
 Final Macro Processing ...
 
@@ -469,8 +521,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 35
- Flip-Flops                                            : 35
+# Registers                                            : 61
+ Flip-Flops                                            : 61
 
 =========================================================================
 
@@ -493,26 +545,30 @@ Top Level Output File Name         : top.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 105
+# BELS                             : 451
 #      GND                         : 2
-#      INV                         : 5
-#      LUT1                        : 18
-#      LUT2                        : 3
-#      LUT3                        : 8
-#      LUT5                        : 5
-#      LUT6                        : 23
-#      MUXCY                       : 18
+#      INV                         : 6
+#      LUT1                        : 31
+#      LUT2                        : 133
+#      LUT3                        : 7
+#      LUT4                        : 3
+#      LUT5                        : 6
+#      LUT6                        : 46
+#      MUXCY                       : 113
 #      MUXF7                       : 1
 #      VCC                         : 2
-#      XORCY                       : 20
-# FlipFlops/Latches                : 36
-#      FD                          : 2
-#      FDR                         : 19
+#      XORCY                       : 101
+# FlipFlops/Latches                : 62
+#      FD                          : 1
+#      FDC                         : 11
+#      FDE                         : 1
+#      FDR                         : 34
 #      FDRE                        : 12
-#      FDS                         : 2
+#      FDS                         : 1
+#      FDSE                        : 1
 #      ODDR2                       : 1
-# RAMS                             : 3
-#      RAMB16BWER                  : 3
+# RAMS                             : 4
+#      RAMB16BWER                  : 4
 # Shift Registers                  : 1
 #      SRL16                       : 1
 # Clock Buffers                    : 1
@@ -533,26 +589,26 @@ Selected Device : 6slx45fgg676-2
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:              36  out of  54576     0%  
- Number of Slice LUTs:                   63  out of  27288     0%  
-    Number used as Logic:                62  out of  27288     0%  
+ Number of Slice Registers:              62  out of  54576     0%  
+ Number of Slice LUTs:                  233  out of  27288     0%  
+    Number used as Logic:               232  out of  27288     0%  
     Number used as Memory:                1  out of   6408     0%  
        Number used as SRL:                1
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:     76
-   Number with an unused Flip Flop:      40  out of     76    52%  
-   Number with an unused LUT:            13  out of     76    17%  
-   Number of fully used LUT-FF pairs:    23  out of     76    30%  
-   Number of unique control sets:         6
+ Number of LUT Flip Flop pairs used:    247
+   Number with an unused Flip Flop:     185  out of    247    74%  
+   Number with an unused LUT:            14  out of    247     5%  
+   Number of fully used LUT-FF pairs:    48  out of    247    19%  
+   Number of unique control sets:        11
 
 IO Utilization: 
  Number of IOs:                          32
  Number of bonded IOBs:                  32  out of    358     8%  
 
 Specific Feature Utilization:
- Number of Block RAM/FIFO:                3  out of    116     2%  
-    Number using Block RAM only:          3
+ Number of Block RAM/FIFO:                4  out of    116     3%  
+    Number using Block RAM only:          4
  Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
  Number of DSP48A1s:                      1  out of     58     1%  
 
@@ -577,8 +633,10 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-clk_i                              | DCM_SP:CLKFX           | 42    |
+clk_i                              | DCM_SP:CLKFX           | 55    |
+frame_signal                       | NONE(frame_counter_0)  | 14    |
 -----------------------------------+------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
 Asynchronous Control Signals Information:
 ----------------------------------------
@@ -588,8 +646,8 @@ Timing Summary:
 ---------------
 Speed Grade: -2
 
-   Minimum period: 9.449ns (Maximum Frequency: 105.830MHz)
-   Minimum input arrival time before clock: 3.404ns
+   Minimum period: 9.486ns (Maximum Frequency: 105.417MHz)
+   Minimum input arrival time before clock: 35.422ns
    Maximum output required time after clock: 4.618ns
    Maximum combinational path delay: No path found
 
@@ -599,47 +657,113 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk_i'
-  Clock period: 9.449ns (frequency: 105.830MHz)
-  Total number of paths / destination ports: 2105 / 121
+  Clock period: 9.486ns (frequency: 105.417MHz)
+  Total number of paths / destination ports: 3959 / 187
 -------------------------------------------------------------------------
-Delay:               10.205ns (Levels of Logic = 3)
+Delay:               10.245ns (Levels of Logic = 3)
   Source:            vga_top_i/vga_i/vga_sync_i/v_count_r_8 (FF)
-  Destination:       vga_top_i/text_mem_i/Mram_text_mem1 (RAM)
+  Destination:       vga_top_i/text_mem_i/Mram_text_mem3 (RAM)
   Source Clock:      clk_i rising 0.9X
   Destination Clock: clk_i rising 0.9X
 
-  Data Path: vga_top_i/vga_i/vga_sync_i/v_count_r_8 to vga_top_i/text_mem_i/Mram_text_mem1
+  Data Path: vga_top_i/vga_i/vga_sync_i/v_count_r_8 to vga_top_i/text_mem_i/Mram_text_mem3
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDRE:C->Q             7   0.525   0.909  vga_top_i/vga_i/vga_sync_i/v_count_r_8 (vga_top_i/vga_i/vga_sync_i/v_count_r_8)
      DSP48A1:B4->P11       5   5.145   0.949  vga_top_i/Maddsub_n0103 (vga_top_i/txt_rom_addr_c<11>)
-     LUT2:I0->O            8   0.250   1.052  vga_top_i/text_mem_i/index_t[30]_GND_22_o_LessThan_5_o1_SW2 (N16)
-     LUT6:I4->O            2   0.250   0.725  vga_top_i/text_mem_i/Mmux_index111 (vga_top_i/text_mem_i/index<7>)
-     RAMB16BWER:ADDRB8         0.400          vga_top_i/text_mem_i/Mram_text_mem1
+     LUT2:I0->O            8   0.250   1.052  vga_top_i/text_mem_i/index_t[30]_GND_22_o_LessThan_5_o1_SW2 (N21)
+     LUT6:I4->O            3   0.250   0.765  vga_top_i/text_mem_i/Mmux_index111 (vga_top_i/text_mem_i/index<7>)
+     RAMB16BWER:ADDRB8         0.400          vga_top_i/text_mem_i/Mram_text_mem3
     ----------------------------------------
-    Total                     10.205ns (6.570ns logic, 3.635ns route)
-                                       (64.4% logic, 35.6% route)
+    Total                     10.245ns (6.570ns logic, 3.675ns route)
+                                       (64.1% logic, 35.9% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'clk_i'
-  Total number of paths / destination ports: 1 / 1
+Timing constraint: Default period analysis for Clock 'frame_signal'
+  Clock period: 4.941ns (frequency: 202.388MHz)
+  Total number of paths / destination ports: 273 / 28
 -------------------------------------------------------------------------
-Offset:              3.404ns (Levels of Logic = 2)
-  Source:            reset_n_i (PAD)
-  Destination:       vga_top_i/vga_i/locked_del_reg_r (FF)
-  Destination Clock: clk_i rising 0.9X
+Delay:               4.941ns (Levels of Logic = 2)
+  Source:            frame_counter_7 (FF)
+  Destination:       frame_counter_0 (FF)
+  Source Clock:      frame_signal rising
+  Destination Clock: frame_signal rising
 
-  Data Path: reset_n_i to vga_top_i/vga_i/locked_del_reg_r
+  Data Path: frame_counter_7 to frame_counter_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             1   1.328   0.681  reset_n_i_IBUF (reset_n_i_IBUF)
-     INV:I->O              1   0.255   0.681  vga_top_i/vga_i/rst_n_i_inv1_INV_0 (vga_top_i/vga_i/rst_n_i_inv)
-     FDR:R                     0.459          vga_top_i/vga_i/locked_del_reg_r
+     FDR:C->Q              7   0.525   1.365  frame_counter_7 (frame_counter_7)
+     LUT6:I0->O            1   0.254   0.958  frame_counter[13]_GND_5_o_LessThan_81_o_inv2 (frame_counter[13]_GND_5_o_LessThan_81_o_inv2)
+     LUT6:I2->O           14   0.254   1.126  frame_counter[13]_GND_5_o_LessThan_81_o_inv3 (frame_counter[13]_GND_5_o_LessThan_81_o_inv)
+     FDR:R                     0.459          frame_counter_0
     ----------------------------------------
-    Total                      3.404ns (2.042ns logic, 1.362ns route)
-                                       (60.0% logic, 40.0% route)
+    Total                      4.941ns (1.492ns logic, 3.449ns route)
+                                       (30.2% logic, 69.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk_i'
+  Total number of paths / destination ports: 294907 / 19
+-------------------------------------------------------------------------
+Offset:              35.422ns (Levels of Logic = 45)
+  Source:            reset_n_i (PAD)
+  Destination:       vga_top_i/text_mem_i/Mram_text_mem3 (RAM)
+  Destination Clock: clk_i rising 0.9X
+
+  Data Path: reset_n_i to vga_top_i/text_mem_i/Mram_text_mem3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   1.328   1.196  reset_n_i_IBUF (reset_n_i_IBUF)
+     LUT5:I0->O           56   0.254   1.976  reset_n_i_GND_5_o_OR_50_o3 (reset_n_i_GND_5_o_OR_50_o)
+     LUT2:I0->O            2   0.250   0.725  Mmux_word_address_111 (word_address_1<0>)
+     MUXCY:DI->O           1   0.181   0.000  Madd_word_address_1[13]_frame_counter[13]_add_85_OUT_cy<0> (Madd_word_address_1[13]_frame_counter[13]_add_85_OUT_cy<0>)
+     XORCY:CI->O           1   0.206   0.682  Madd_word_address_1[13]_frame_counter[13]_add_85_OUT_xor<1> (word_address_1[13]_frame_counter[13]_add_85_OUT<1>)
+     LUT2:I1->O            2   0.254   0.725  Mmux_word_address_161 (word_address_1<1>)
+     MUXCY:DI->O           1   0.181   0.000  Madd_word_address_1[13]_frame_counter[13]_add_85_OUT_cy<1> (Madd_word_address_1[13]_frame_counter[13]_add_85_OUT_cy<1>)
+     XORCY:CI->O           1   0.206   0.682  Madd_word_address_1[13]_frame_counter[13]_add_85_OUT_xor<2> (word_address_1[13]_frame_counter[13]_add_85_OUT<2>)
+     LUT2:I1->O            2   0.254   0.725  Mmux_word_address_171 (word_address_1<2>)
+     MUXCY:DI->O           1   0.181   0.000  Madd_word_address_1[13]_frame_counter[13]_add_85_OUT_cy<2> (Madd_word_address_1[13]_frame_counter[13]_add_85_OUT_cy<2>)
+     XORCY:CI->O           1   0.206   0.682  Madd_word_address_1[13]_frame_counter[13]_add_85_OUT_xor<3> (word_address_1[13]_frame_counter[13]_add_85_OUT<3>)
+     LUT2:I1->O            2   0.254   0.725  Mmux_word_address_181 (word_address_1<3>)
+     MUXCY:DI->O           1   0.181   0.000  Madd_word_address_1[13]_frame_counter[13]_add_85_OUT_cy<3> (Madd_word_address_1[13]_frame_counter[13]_add_85_OUT_cy<3>)
+     XORCY:CI->O           1   0.206   0.682  Madd_word_address_1[13]_frame_counter[13]_add_85_OUT_xor<4> (word_address_1[13]_frame_counter[13]_add_85_OUT<4>)
+     LUT2:I1->O            2   0.254   0.725  Mmux_word_address_191 (word_address_1<4>)
+     MUXCY:DI->O           1   0.181   0.000  Madd_word_address_1[13]_frame_counter[13]_add_85_OUT_cy<4> (Madd_word_address_1[13]_frame_counter[13]_add_85_OUT_cy<4>)
+     XORCY:CI->O           1   0.206   0.682  Madd_word_address_1[13]_frame_counter[13]_add_85_OUT_xor<5> (word_address_1[13]_frame_counter[13]_add_85_OUT<5>)
+     LUT2:I1->O            2   0.254   0.725  Mmux_word_address_1101 (word_address_1<5>)
+     MUXCY:DI->O           1   0.181   0.000  Madd_word_address_1[13]_frame_counter[13]_add_85_OUT_cy<5> (Madd_word_address_1[13]_frame_counter[13]_add_85_OUT_cy<5>)
+     XORCY:CI->O           1   0.206   0.682  Madd_word_address_1[13]_frame_counter[13]_add_85_OUT_xor<6> (word_address_1[13]_frame_counter[13]_add_85_OUT<6>)
+     LUT2:I1->O            2   0.254   0.725  Mmux_word_address_1111 (word_address_1<6>)
+     MUXCY:DI->O           1   0.181   0.000  Madd_word_address_1[13]_frame_counter[13]_add_85_OUT_cy<6> (Madd_word_address_1[13]_frame_counter[13]_add_85_OUT_cy<6>)
+     XORCY:CI->O           1   0.206   0.682  Madd_word_address_1[13]_frame_counter[13]_add_85_OUT_xor<7> (word_address_1[13]_frame_counter[13]_add_85_OUT<7>)
+     LUT2:I1->O            2   0.254   0.725  Mmux_word_address_1121 (word_address_1<7>)
+     MUXCY:DI->O           1   0.181   0.000  Madd_word_address_1[13]_frame_counter[13]_add_85_OUT_cy<7> (Madd_word_address_1[13]_frame_counter[13]_add_85_OUT_cy<7>)
+     XORCY:CI->O           1   0.206   0.682  Madd_word_address_1[13]_frame_counter[13]_add_85_OUT_xor<8> (word_address_1[13]_frame_counter[13]_add_85_OUT<8>)
+     LUT2:I1->O            2   0.254   0.725  Mmux_word_address_1131 (word_address_1<8>)
+     MUXCY:DI->O           1   0.181   0.000  Madd_word_address_1[13]_frame_counter[13]_add_85_OUT_cy<8> (Madd_word_address_1[13]_frame_counter[13]_add_85_OUT_cy<8>)
+     XORCY:CI->O           1   0.206   0.682  Madd_word_address_1[13]_frame_counter[13]_add_85_OUT_xor<9> (word_address_1[13]_frame_counter[13]_add_85_OUT<9>)
+     LUT2:I1->O            2   0.254   0.725  Mmux_word_address_1141 (word_address_1<9>)
+     MUXCY:DI->O           1   0.181   0.000  Madd_word_address_1[13]_frame_counter[13]_add_85_OUT_cy<9> (Madd_word_address_1[13]_frame_counter[13]_add_85_OUT_cy<9>)
+     XORCY:CI->O           1   0.206   0.682  Madd_word_address_1[13]_frame_counter[13]_add_85_OUT_xor<10> (word_address_1[13]_frame_counter[13]_add_85_OUT<10>)
+     LUT2:I1->O            2   0.254   0.725  Mmux_word_address_121 (word_address_1<10>)
+     MUXCY:DI->O           1   0.181   0.000  Madd_word_address_1[13]_frame_counter[13]_add_85_OUT_cy<10> (Madd_word_address_1[13]_frame_counter[13]_add_85_OUT_cy<10>)
+     XORCY:CI->O           1   0.206   0.682  Madd_word_address_1[13]_frame_counter[13]_add_85_OUT_xor<11> (word_address_1[13]_frame_counter[13]_add_85_OUT<11>)
+     LUT2:I1->O            2   0.254   0.725  Mmux_word_address_131 (word_address_1<11>)
+     MUXCY:DI->O           1   0.181   0.000  Madd_word_address_1[13]_frame_counter[13]_add_85_OUT_cy<11> (Madd_word_address_1[13]_frame_counter[13]_add_85_OUT_cy<11>)
+     XORCY:CI->O           1   0.206   0.682  Madd_word_address_1[13]_frame_counter[13]_add_85_OUT_xor<12> (word_address_1[13]_frame_counter[13]_add_85_OUT<12>)
+     LUT2:I1->O            2   0.254   0.725  Mmux_word_address_141 (word_address_1<12>)
+     MUXCY:DI->O           0   0.181   0.000  Madd_word_address_1[13]_frame_counter[13]_add_85_OUT_cy<12> (Madd_word_address_1[13]_frame_counter[13]_add_85_OUT_cy<12>)
+     XORCY:CI->O           1   0.206   0.682  Madd_word_address_1[13]_frame_counter[13]_add_85_OUT_xor<13> (word_address_1[13]_frame_counter[13]_add_85_OUT<13>)
+     LUT2:I1->O            2   0.254   0.726  Mmux_word_address_151 (word_address_1<13>)
+     LUT2:I1->O            1   0.254   0.000  Mcompar_char_address[13]_word_address_1[13]_equal_73_o_lut<4>1 (Mcompar_char_address[13]_word_address_1[13]_equal_73_o_lut<4>)
+     MUXCY:S->O            6   0.427   1.152  Mcompar_char_address[13]_word_address_1[13]_equal_73_o_cy<4> (char_address[13]_word_address_1[13]_equal_73_o)
+     LUT4:I0->O            1   0.254   0.681  Mmux_char_value61 (char_value<5>)
+     RAMB16BWER:DIA1           0.300          vga_top_i/text_mem_i/Mram_text_mem3
+    ----------------------------------------
+    Total                     35.422ns (11.400ns logic, 24.022ns route)
+                                       (32.2% logic, 67.8% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_i'
@@ -670,20 +794,30 @@ Clock to Setup on destination clock clk_i
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk_i          |   10.205|         |         |         |
+clk_i          |   10.245|         |         |         |
+frame_signal   |   36.973|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock frame_signal
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+frame_signal   |    4.941|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 4.00 secs
-Total CPU time to Xst completion: 4.22 secs
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 7.12 secs
  
 --> 
 
-Total memory usage is 227344 kilobytes
+
+Total memory usage is 410472 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   19 (   0 filtered)
+Number of warnings :   34 (   0 filtered)
 Number of infos    :    7 (   0 filtered)
 

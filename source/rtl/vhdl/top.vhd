@@ -142,6 +142,13 @@ architecture rtl of top is
   signal char_we             : std_logic;
   signal char_address        : std_logic_vector(MEM_ADDR_WIDTH-1 downto 0);
   signal char_value          : std_logic_vector(5 downto 0);
+  
+  signal word_address_1      : std_logic_vector(MEM_ADDR_WIDTH-1 downto 0);
+  signal word_address_2      : std_logic_vector(MEM_ADDR_WIDTH-1 downto 0);
+  signal word_address_3      : std_logic_vector(MEM_ADDR_WIDTH-1 downto 0);
+  signal word_address_4      : std_logic_vector(MEM_ADDR_WIDTH-1 downto 0);
+  signal frame_signal        : std_logic;
+  signal frame_counter       : std_logic_vector(13 downto 0);
 
   signal pixel_address       : std_logic_vector(GRAPH_MEM_ADDR_WIDTH-1 downto 0);
   signal pixel_value         : std_logic_vector(GRAPH_MEM_DATA_WIDTH-1 downto 0);
@@ -252,22 +259,22 @@ begin
   --dir_blue
   
 	dir_red <= x"FF" when dir_pixel_column < H_RES/8 else
-					x"FF" when dir_pixel_column >= H_RES/8 and dir_pixel_column < 2*(H_RES/8) else
-					x"00" when dir_pixel_column >= 2*(H_RES/8) and dir_pixel_column < 3*(H_RES/8) else
-					x"00" when dir_pixel_column >= 3*(H_RES/8) and dir_pixel_column < 4*(H_RES/8) else
-					x"FF" when dir_pixel_column >= 4*(H_RES/8) and dir_pixel_column < 5*(H_RES/8) else
-					x"FF" when dir_pixel_column >= 5*(H_RES/8) and dir_pixel_column < 6*(H_RES/8) else
-					x"00" when dir_pixel_column >= 6*(H_RES/8) and dir_pixel_column < 7*(H_RES/8) else
-					x"00"; 
+			x"FF" when dir_pixel_column >= H_RES/8 and dir_pixel_column < 2*(H_RES/8) else
+			x"00" when dir_pixel_column >= 2*(H_RES/8) and dir_pixel_column < 3*(H_RES/8) else
+			x"00" when dir_pixel_column >= 3*(H_RES/8) and dir_pixel_column < 4*(H_RES/8) else
+			x"FF" when dir_pixel_column >= 4*(H_RES/8) and dir_pixel_column < 5*(H_RES/8) else
+			x"FF" when dir_pixel_column >= 5*(H_RES/8) and dir_pixel_column < 6*(H_RES/8) else
+			x"00" when dir_pixel_column >= 6*(H_RES/8) and dir_pixel_column < 7*(H_RES/8) else
+			x"00"; 
 	
 	dir_green <= x"FF" when dir_pixel_column < H_RES/8 else
-				x"A5" when dir_pixel_column >= H_RES/8 and dir_pixel_column < 2*(H_RES/8) else
-				x"FF" when dir_pixel_column >= 2*(H_RES/8) and dir_pixel_column < 3*(H_RES/8) else
-				x"FF" when dir_pixel_column >= 3*(H_RES/8) and dir_pixel_column < 4*(H_RES/8) else
-				x"00" when dir_pixel_column >= 4*(H_RES/8) and dir_pixel_column < 5*(H_RES/8) else
-				x"00" when dir_pixel_column >= 5*(H_RES/8) and dir_pixel_column < 6*(H_RES/8) else
-				x"00" when dir_pixel_column >= 6*(H_RES/8) and dir_pixel_column < 7*(H_RES/8) else
-				x"00";
+			x"A5" when dir_pixel_column >= H_RES/8 and dir_pixel_column < 2*(H_RES/8) else
+			x"FF" when dir_pixel_column >= 2*(H_RES/8) and dir_pixel_column < 3*(H_RES/8) else
+			x"FF" when dir_pixel_column >= 3*(H_RES/8) and dir_pixel_column < 4*(H_RES/8) else
+			x"00" when dir_pixel_column >= 4*(H_RES/8) and dir_pixel_column < 5*(H_RES/8) else
+			x"00" when dir_pixel_column >= 5*(H_RES/8) and dir_pixel_column < 6*(H_RES/8) else
+			x"00" when dir_pixel_column >= 6*(H_RES/8) and dir_pixel_column < 7*(H_RES/8) else
+			x"00";
 					
 	dir_blue <= x"FF" when dir_pixel_column < H_RES/8 else
 			x"00" when dir_pixel_column >= H_RES/8 and dir_pixel_column < 2*(H_RES/8) else
@@ -285,10 +292,60 @@ begin
   
 	--char_address <= conv_std_logic_vector(100, char_address'length);
 	--char_value <= "000011";
-	--char_we <= '1';
+	char_we <= '1';
 	
-
+	process (pix_clock_s, reset_n_i) begin
+		if (reset_n_i = '0') then
+			char_address <= conv_std_logic_vector(0, char_address'length);
+		elsif (rising_edge(pix_clock_s)) then
+			if (char_address < 1199) then
+				char_address <= char_address + 1;
+				frame_signal <= '0';
+			else
+				char_address <= conv_std_logic_vector(0, char_address'length);
+				frame_signal <= '1';
+			end if;
+		end if;
+	end process;
+	
+	process (char_address) begin
+		if (char_address = word_address_1) then
+			char_value <= conv_std_logic_vector(4, char_value'length);
+		elsif (char_address = word_address_2) then
+			char_value <= conv_std_logic_vector(25, char_value'length);
+		elsif (char_address = word_address_3) then
+			char_value <= conv_std_logic_vector(3, char_value'length);
+		elsif (char_address = word_address_4) then
+			char_value <= conv_std_logic_vector(1, char_value'length);
+		else
+			char_value <= conv_std_logic_vector(40, char_value'length);
+		end if;
+	end process;
   
+   process (frame_signal) begin
+		if (rising_edge(frame_signal)) then
+			if (frame_counter < 1196) then
+				frame_counter <= frame_counter + 1;
+			else
+				frame_counter <= (others => '0');
+			end if;
+		end if;
+	end process;
+	
+	process(frame_counter, reset_n_i) begin
+		if (reset_n_i = '0' or frame_counter = 1196) then
+			word_address_1 <= conv_std_logic_vector(0, word_address_1'length);
+			word_address_2 <= conv_std_logic_vector(1, word_address_2'length);
+			word_address_3 <= conv_std_logic_vector(2, word_address_3'length);
+			word_address_4 <= conv_std_logic_vector(3, word_address_4'length);
+		else 
+			word_address_1 <= word_address_1 + frame_counter;
+			word_address_2 <= word_address_2 + frame_counter;
+			word_address_3 <= word_address_3 + frame_counter;
+			word_address_4 <= word_address_4 + frame_counter;
+		end if;
+	end process;
+	
   -- koristeci signale realizovati logiku koja pise po GRAPH_MEM
   --pixel_address
   --pixel_value
