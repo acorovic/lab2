@@ -155,6 +155,8 @@ architecture rtl of top is
   signal pixel_address       : std_logic_vector(GRAPH_MEM_ADDR_WIDTH-1 downto 0);
   signal pixel_value         : std_logic_vector(GRAPH_MEM_DATA_WIDTH-1 downto 0);
   signal pixel_we            : std_logic;
+  signal pixel_counter		  : std_logic_vector(6 downto 0);
+  signal pixel_signal        : std_logic;
 
   signal pix_clock_s         : std_logic;
   signal vga_rst_n_s         : std_logic;
@@ -178,7 +180,7 @@ begin
   
   -- removed to inputs pin
   direct_mode <= '0';
-  display_mode     <= "01";  -- 01 - text mode, 10 - graphics mode, 11 - text & graphics
+  display_mode     <= "10";  -- 01 - text mode, 10 - graphics mode, 11 - text & graphics
   
   font_size        <= x"1";
   show_frame       <= '1';
@@ -386,6 +388,46 @@ begin
   --pixel_address
   --pixel_value
   --pixel_we
+  pixel_we <= '1';
+	
+	process (pix_clock_s, reset_n_i) begin
+		if (reset_n_i = '0') then
+			pixel_signal <= '0';
+		elsif (rising_edge(pix_clock_s)) then
+			if (pixel_counter < 32) then
+				pixel_counter <= pixel_counter + 1;
+				pixel_signal <= '0';
+			else
+				pixel_counter <= conv_std_logic_vector(0, pixel_counter'length);
+				pixel_signal <= '1';
+			end if;
+		end if;
+	end process;
   
-  
+	process (pixel_signal, reset_n_i) begin
+		if (reset_n_i = '0') then
+			pixel_address <= (others => '0');
+		elsif (rising_edge(pixel_signal)) then
+			if (pixel_address < 9600) then
+				pixel_address <= pixel_address + 1;
+			else
+				pixel_address <= (others => '0');
+			end if;
+		end if;
+	end process;
+	
+	process (pixel_address) begin
+		if (pixel_address = 238  * 20 + 9) then
+			pixel_value <= "11100000000000000000000000000000";
+		elsif (pixel_address = 238 * 20 + 10) then
+			pixel_value <= conv_std_logic_vector(3, pixel_value'length);
+		elsif (pixel_address = 243 * 20 + 9) then
+			pixel_value <= "11100000000000000000000000000000";
+		elsif (pixel_address = 243 * 20 + 10) then
+			pixel_value <= conv_std_logic_vector(3, pixel_value'length);
+		else
+			pixel_value <= (others => '0');
+		end if;
+	end process;
+	
 end rtl;
