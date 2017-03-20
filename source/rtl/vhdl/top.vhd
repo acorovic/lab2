@@ -149,6 +149,8 @@ architecture rtl of top is
   signal word_address_4      : std_logic_vector(MEM_ADDR_WIDTH-1 downto 0);
   signal frame_signal        : std_logic;
   signal frame_counter       : std_logic_vector(13 downto 0);
+  signal refresh				  : std_logic_vector(31 downto 0);
+  signal refresh_signal 	  : std_logic;
 
   signal pixel_address       : std_logic_vector(GRAPH_MEM_ADDR_WIDTH-1 downto 0);
   signal pixel_value         : std_logic_vector(GRAPH_MEM_DATA_WIDTH-1 downto 0);
@@ -318,33 +320,67 @@ begin
 		elsif (char_address = word_address_4) then
 			char_value <= conv_std_logic_vector(1, char_value'length);
 		else
-			char_value <= conv_std_logic_vector(40, char_value'length);
-		end if;
-	end process;
-  
-   process (frame_signal) begin
-		if (rising_edge(frame_signal)) then
-			if (frame_counter < 1196) then
-				frame_counter <= frame_counter + 1;
-			else
-				frame_counter <= (others => '0');
-			end if;
+			char_value <= conv_std_logic_vector(32, char_value'length);
 		end if;
 	end process;
 	
-	process(frame_counter, reset_n_i) begin
-		if (reset_n_i = '0' or frame_counter = 1196) then
+	process (frame_signal) begin
+		if(rising_edge(frame_signal)) then
+			if(refresh < 2000) then
+				refresh <= refresh + 1;
+				refresh_signal <= '0';
+			else 
+				refresh <= (others => '0');
+				refresh_signal <= '1';
+			end if;
+		end if;
+	end process;
+  
+   --process (refresh_signal) begin
+		--if (rising_edge(refresh_signal)) then
+			--if (frame_counter < 1196) then
+				--frame_counter <= frame_counter + 1;
+			--else
+				--frame_counter <= (others => '0');
+			--end if;
+		--end if;
+	--end process;
+	--frame_counter <= (others => '0');
+
+	process (refresh_signal, reset_n_i) begin
+		if (reset_n_i = '0') then
 			word_address_1 <= conv_std_logic_vector(0, word_address_1'length);
 			word_address_2 <= conv_std_logic_vector(1, word_address_2'length);
 			word_address_3 <= conv_std_logic_vector(2, word_address_3'length);
 			word_address_4 <= conv_std_logic_vector(3, word_address_4'length);
-		else 
-			word_address_1 <= word_address_1 + frame_counter;
-			word_address_2 <= word_address_2 + frame_counter;
-			word_address_3 <= word_address_3 + frame_counter;
-			word_address_4 <= word_address_4 + frame_counter;
+		elsif (rising_edge(refresh_signal)) then
+			if (word_address_4 = 1199) then
+				word_address_1 <= conv_std_logic_vector(0, word_address_1'length);
+				word_address_2 <= conv_std_logic_vector(1, word_address_2'length);
+				word_address_3 <= conv_std_logic_vector(2, word_address_3'length);
+				word_address_4 <= conv_std_logic_vector(3, word_address_4'length);
+			else
+				word_address_1 <= word_address_1 + 1;
+				word_address_2 <= word_address_2 + 1;
+				word_address_3 <= word_address_3 + 1;
+				word_address_4 <= word_address_4 + 1;
+			end if;
 		end if;
 	end process;
+
+	--process(frame_counter, reset_n_i) begin
+		--if (reset_n_i = '0' or frame_counter = 1196) then
+			--word_address_1 <= conv_std_logic_vector(0, word_address_1'length);
+			--word_address_2 <= conv_std_logic_vector(1, word_address_2'length);
+			--word_address_3 <= conv_std_logic_vector(2, word_address_3'length);
+			--word_address_4 <= conv_std_logic_vector(3, word_address_4'length);
+		--else 
+			--word_address_1 <= word_address_1 + frame_counter;
+			--word_address_2 <= word_address_2 + frame_counter;
+			--word_address_3 <= word_address_3 + frame_counter;
+			--word_address_4 <= word_address_4 + frame_counter;
+		--end if;
+	--end process;
 	
   -- koristeci signale realizovati logiku koja pise po GRAPH_MEM
   --pixel_address
