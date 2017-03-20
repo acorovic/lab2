@@ -1,9 +1,6 @@
-set -tmpdir "xst/projnav.tmp"
-set -xsthdpdir "xst"
-run
--ifn top.prj
--ofn top
--ofmt NGC
+set -tmpdir "/home/mix/Desktop/LPRS2/lab2/synthesis/lab2/xst/projnav.tmp"
+set -xsthdpdir "/home/mix/Desktop/LPRS2/lab2/synthesis/lab2/xst"
+run -compileonly yes
 -p xc6slx45-2-fgg676
 -top top
 -opt_mode Speed
@@ -51,3 +48,4 @@ run
 -iob Auto
 -equivalent_register_removal YES
 -slice_utilization_ratio_maxmargin 5
+-ifn top.prj

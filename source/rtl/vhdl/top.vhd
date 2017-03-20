@@ -157,6 +157,8 @@ architecture rtl of top is
   signal pixel_we            : std_logic;
   signal pixel_counter		  : std_logic_vector(6 downto 0);
   signal pixel_signal        : std_logic;
+  signal column_counter      : std_logic_vector(6 downto 0);
+  signal row_counter         : std_logic_vector(10 downto 0);
 
   signal pix_clock_s         : std_logic;
   signal vga_rst_n_s         : std_logic;
@@ -403,6 +405,24 @@ begin
 			end if;
 		end if;
 	end process;
+	
+	process (pixel_signal, reset_n_i) begin
+		if (reset_n_i = '0') then
+			column_counter <= (others => '0');
+			row_counter <= (others => '0');
+		elsif (rising_edge(pixel_signal)) then
+			if (column_counter < 20) then
+				column_counter <= column_counter + 1;
+			else
+				if (row_counter < 480) then
+					row_counter <= row_counter + 1;
+				else
+					row_counter <= (others => '0');
+				end if;
+				column_counter <= (others => '0');
+			end if;
+		end if;
+	end process;
   
 	process (pixel_signal, reset_n_i) begin
 		if (reset_n_i = '0') then
@@ -416,15 +436,9 @@ begin
 		end if;
 	end process;
 	
-	process (pixel_address) begin
-		if (pixel_address = 238  * 20 + 9) then
-			pixel_value <= "11100000000000000000000000000000";
-		elsif (pixel_address = 238 * 20 + 10) then
-			pixel_value <= conv_std_logic_vector(3, pixel_value'length);
-		elsif (pixel_address = 243 * 20 + 9) then
-			pixel_value <= "11100000000000000000000000000000";
-		elsif (pixel_address = 243 * 20 + 10) then
-			pixel_value <= conv_std_logic_vector(3, pixel_value'length);
+	process (column_counter, row_counter) begin
+		if (row_counter > 223 and row_counter < 257 and column_counter = 9) then
+			pixel_value <= (others => '1');
 		else
 			pixel_value <= (others => '0');
 		end if;
