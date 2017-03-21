@@ -159,6 +159,7 @@ architecture rtl of top is
   signal pixel_signal        : std_logic;
   signal column_counter      : std_logic_vector(10 downto 0);
   signal row_counter         : std_logic_vector(10 downto 0);
+  signal column_rotate       : std_logic_vector(10 downto 0);
 
   signal pix_clock_s         : std_logic;
   signal vga_rst_n_s         : std_logic;
@@ -427,20 +428,24 @@ begin
 	process (pixel_signal, reset_n_i) begin
 		if (reset_n_i = '0') then
 			pixel_address <= (others => '0');
+			column_rotate <= (others => '0');
 		elsif (rising_edge(pixel_signal)) then
 			if (pixel_address < 9600 - 1) then
 				pixel_address <= pixel_address + 1;
 			else
+				if (column_rotate < 20 - 1) then
+					column_rotate <= column_rotate + 1;
+				else
+					column_rotate <= (others => '0');
+				end if;
 				pixel_address <= (others => '0');
 			end if;
 		end if;
 	end process;
 	
 	process (column_counter, row_counter) begin
-		if (row_counter > 224 and row_counter < 256 and column_counter = 9) then
-			pixel_value <= "11111111111111110000000000000000";
-		elsif (row_counter > 224 and row_counter < 256 and column_counter = 10) then
-			pixel_value <= "00000000000000001111111111111111";
+		if (row_counter > 224 and row_counter < 256 and column_counter = column_rotate) then
+			pixel_value <= (others => '1');
 		else
 			pixel_value <= (others => '0');
 		end if;
