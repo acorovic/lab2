@@ -59,10 +59,22 @@ begin
   mem_up_addr <= "000"   & rd_addr_i(MEM_ADDR_WIDTH-1 downto 3) when (MEM_DATA_WIDTH = 8) else
                  "0000"  & rd_addr_i(MEM_ADDR_WIDTH-1 downto 4) when (MEM_DATA_WIDTH = 16) else
                  "00000" & rd_addr_i(MEM_ADDR_WIDTH-1 downto 5);
+					  
+  process (clk_i) begin
+		if (rising_edge(clk_i)) then
+			if (MEM_DATA_WIDTH = 8) then
+				mem_lo_addr <= "00" & rd_addr_i(3-1 downto 0);
+			elsif (MEM_DATA_WIDTH = 16) then
+				mem_lo_addr <= '0'  & rd_addr_i(4-1 downto 0);
+			else
+				mem_lo_addr <= rd_addr_i(5-1 downto 0);
+			end if;
+		end if;
+  end process;
 
-  mem_lo_addr <= "00" & rd_addr_i(3-1 downto 0) when (MEM_DATA_WIDTH = 8) else
-                 '0'  & rd_addr_i(4-1 downto 0) when (MEM_DATA_WIDTH = 16) else
-                      rd_addr_i(5-1 downto 0);
+--  mem_lo_addr <= "00" & rd_addr_i(3-1 downto 0) when (MEM_DATA_WIDTH = 8) else
+--                 '0'  & rd_addr_i(4-1 downto 0) when (MEM_DATA_WIDTH = 16) else
+--                      rd_addr_i(5-1 downto 0);
   
   DP_GRAPHICS_MEM : process (clk_i) begin
     if (rising_edge(clk_i)) then

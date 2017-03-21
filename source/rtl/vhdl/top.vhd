@@ -157,7 +157,7 @@ architecture rtl of top is
   signal pixel_we            : std_logic;
   signal pixel_counter		  : std_logic_vector(6 downto 0);
   signal pixel_signal        : std_logic;
-  signal column_counter      : std_logic_vector(6 downto 0);
+  signal column_counter      : std_logic_vector(10 downto 0);
   signal row_counter         : std_logic_vector(10 downto 0);
 
   signal pix_clock_s         : std_logic;
@@ -186,8 +186,8 @@ begin
   
   font_size        <= x"1";
   show_frame       <= '1';
-  foreground_color <= x"FFFFFF";
-  background_color <= x"000000";
+  --foreground_color <= x"FFFFFF";
+  --background_color <= x"000000";
   frame_color      <= x"FF0000";
 
   clk5m_inst : ODDR2
@@ -390,13 +390,13 @@ begin
   --pixel_address
   --pixel_value
   --pixel_we
-  pixel_we <= '1';
+	pixel_we <= '1';
 	
 	process (pix_clock_s, reset_n_i) begin
 		if (reset_n_i = '0') then
 			pixel_signal <= '0';
 		elsif (rising_edge(pix_clock_s)) then
-			if (pixel_counter < 32) then
+			if (pixel_counter < 32 - 1) then
 				pixel_counter <= pixel_counter + 1;
 				pixel_signal <= '0';
 			else
@@ -411,10 +411,10 @@ begin
 			column_counter <= (others => '0');
 			row_counter <= (others => '0');
 		elsif (rising_edge(pixel_signal)) then
-			if (column_counter < 20) then
+			if (column_counter < 20 - 1) then
 				column_counter <= column_counter + 1;
 			else
-				if (row_counter < 480) then
+				if (row_counter < 480 - 1) then
 					row_counter <= row_counter + 1;
 				else
 					row_counter <= (others => '0');
@@ -428,7 +428,7 @@ begin
 		if (reset_n_i = '0') then
 			pixel_address <= (others => '0');
 		elsif (rising_edge(pixel_signal)) then
-			if (pixel_address < 9600) then
+			if (pixel_address < 9600 - 1) then
 				pixel_address <= pixel_address + 1;
 			else
 				pixel_address <= (others => '0');
@@ -437,11 +437,16 @@ begin
 	end process;
 	
 	process (column_counter, row_counter) begin
-		if (row_counter > 223 and row_counter < 257 and column_counter = 9) then
-			pixel_value <= (others => '1');
+		if (row_counter > 224 and row_counter < 256 and column_counter = 9) then
+			pixel_value <= "11111111111111110000000000000000";
+		elsif (row_counter > 224 and row_counter < 256 and column_counter = 10) then
+			pixel_value <= "00000000000000001111111111111111";
 		else
 			pixel_value <= (others => '0');
 		end if;
 	end process;
+	
+	foreground_color <= "000000001111111100000000";
+	background_color <= x"F442D7";
 	
 end rtl;
