@@ -1,0 +1,94 @@
+Release 14.6 - xst P.68d (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to /home/mix/Desktop/LPRS2/lab2/synthesis/lab2/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.05 secs
+ 
+--> 
+Parameter xsthdpdir set to /home/mix/Desktop/LPRS2/lab2/synthesis/lab2/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.05 secs
+ 
+--> 
+Reading design: top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "/home/mix/Desktop/LPRS2/lab2/source/rtl/vhdl/vga_sync.vhd" into library work
+Parsing entity <vga_sync>.
+Parsing architecture <rtl> of entity <vga_sync>.
+Parsing VHDL file "/home/mix/Desktop/LPRS2/lab2/source/coregen/dcm75MHz.vhd" into library work
+Parsing entity <dcm75MHz>.
+Parsing architecture <xilinx> of entity <dcm75mhz>.
+Parsing VHDL file "/home/mix/Desktop/LPRS2/lab2/source/coregen/dcm50MHz.vhd" into library work
+Parsing entity <dcm50MHz>.
+Parsing architecture <xilinx> of entity <dcm50mhz>.
+Parsing VHDL file "/home/mix/Desktop/LPRS2/lab2/source/coregen/dcm25MHz.vhd" into library work
+Parsing entity <dcm25MHz>.
+Parsing architecture <xilinx> of entity <dcm25mhz>.
+Parsing VHDL file "/home/mix/Desktop/LPRS2/lab2/source/coregen/dcm108MHz.vhd" into library work
+Parsing entity <dcm108MHz>.
+Parsing architecture <xilinx> of entity <dcm108mhz>.
+Parsing VHDL file "/home/mix/Desktop/LPRS2/lab2/source/coregen/char_rom/char_rom_def.vhd" into library work
+Parsing entity <char_rom_def>.
+Parsing architecture <char_rom_def_a> of entity <char_rom_def>.
+Parsing VHDL file "/home/mix/Desktop/LPRS2/lab2/source/rtl/vhdl/vga.vhd" into library work
+Parsing entity <vga>.
+Parsing architecture <rtl> of entity <vga>.
+Parsing VHDL file "/home/mix/Desktop/LPRS2/lab2/source/rtl/vhdl/text_mem.vhd" into library work
+Parsing entity <text_mem>.
+Parsing architecture <arc_text_mem> of entity <text_mem>.
+Parsing VHDL file "/home/mix/Desktop/LPRS2/lab2/source/rtl/vhdl/graphics_mem.vhd" into library work
+Parsing entity <graphics_mem>.
+Parsing architecture <arc_graphics_mem> of entity <graphics_mem>.
+Parsing VHDL file "/home/mix/Desktop/LPRS2/lab2/source/rtl/vhdl/char_rom.vhd" into library work
+Parsing entity <char_rom>.
+Parsing architecture <Behavioral> of entity <char_rom>.
+Parsing VHDL file "/home/mix/Desktop/LPRS2/lab2/source/rtl/vhdl/vga_top.vhd" into library work
+Parsing entity <vga_top>.
+Parsing architecture <rtl> of entity <vga_top>.
+Parsing VHDL file "/home/mix/Desktop/LPRS2/lab2/source/rtl/vhdl/top.vhd" into library work
+Parsing entity <top>.
+Parsing architecture <rtl> of entity <top>.
+
+
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 3.46 secs
+ 
+--> 
+
+
+Total memory usage is 322324 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

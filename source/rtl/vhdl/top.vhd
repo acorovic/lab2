@@ -187,8 +187,8 @@ begin
   
   font_size        <= x"1";
   show_frame       <= '1';
-  --foreground_color <= x"FFFFFF";
-  --background_color <= x"000000";
+  foreground_color <= x"00FF00";
+  background_color <= x"F442D7";
   frame_color      <= x"FF0000";
 
   clk5m_inst : ODDR2
@@ -340,17 +340,6 @@ begin
 			end if;
 		end if;
 	end process;
-  
-   --process (refresh_signal) begin
-		--if (rising_edge(refresh_signal)) then
-			--if (frame_counter < 1196) then
-				--frame_counter <= frame_counter + 1;
-			--else
-				--frame_counter <= (others => '0');
-			--end if;
-		--end if;
-	--end process;
-	--frame_counter <= (others => '0');
 
 	process (refresh_signal, reset_n_i) begin
 		if (reset_n_i = '0') then
@@ -360,32 +349,21 @@ begin
 			word_address_4 <= conv_std_logic_vector(3, word_address_4'length);
 		elsif (rising_edge(refresh_signal)) then
 			if (word_address_4 = 1199) then
-				word_address_1 <= conv_std_logic_vector(0, word_address_1'length);
-				word_address_2 <= conv_std_logic_vector(1, word_address_2'length);
-				word_address_3 <= conv_std_logic_vector(2, word_address_3'length);
-				word_address_4 <= conv_std_logic_vector(3, word_address_4'length);
+				word_address_4 <= conv_std_logic_vector(0, word_address_4'length);
+			elsif (word_address_3 = 1199) then
+				word_address_3 <= conv_std_logic_vector(0, word_address_4'length);
+			elsif (word_address_2 = 1199) then
+				word_address_2 <= conv_std_logic_vector(0, word_address_4'length);
+			elsif (word_address_1 = 1199) then
+				word_address_1 <= conv_std_logic_vector(0, word_address_4'length);
 			else
 				word_address_1 <= word_address_1 + 1;
-				word_address_2 <= word_address_2 + 1;
+    			word_address_2 <= word_address_2 + 1;
 				word_address_3 <= word_address_3 + 1;
 				word_address_4 <= word_address_4 + 1;
 			end if;
 		end if;
 	end process;
-
-	--process(frame_counter, reset_n_i) begin
-		--if (reset_n_i = '0' or frame_counter = 1196) then
-			--word_address_1 <= conv_std_logic_vector(0, word_address_1'length);
-			--word_address_2 <= conv_std_logic_vector(1, word_address_2'length);
-			--word_address_3 <= conv_std_logic_vector(2, word_address_3'length);
-			--word_address_4 <= conv_std_logic_vector(3, word_address_4'length);
-		--else 
-			--word_address_1 <= word_address_1 + frame_counter;
-			--word_address_2 <= word_address_2 + frame_counter;
-			--word_address_3 <= word_address_3 + frame_counter;
-			--word_address_4 <= word_address_4 + frame_counter;
-		--end if;
-	--end process;
 	
   -- koristeci signale realizovati logiku koja pise po GRAPH_MEM
   --pixel_address
@@ -450,8 +428,5 @@ begin
 			pixel_value <= (others => '0');
 		end if;
 	end process;
-	
-	foreground_color <= "000000001111111100000000";
-	background_color <= x"F442D7";
 	
 end rtl;
