@@ -23,6 +23,8 @@ entity top is
   port (
     clk_i          : in  std_logic;
     reset_n_i      : in  std_logic;
+	 direct_mode_i  : in std_logic;
+	 display_mode_i : in std_logic_vector(1 downto 0);
     -- vga
     vga_hsync_o    : out std_logic;
     vga_vsync_o    : out std_logic;
@@ -160,6 +162,8 @@ architecture rtl of top is
   signal column_counter      : std_logic_vector(10 downto 0);
   signal row_counter         : std_logic_vector(10 downto 0);
   signal column_rotate       : std_logic_vector(10 downto 0);
+  signal row_rotate_lower    : std_logic_vector(10 downto 0);
+  signal row_rotate_upper    : std_logic_vector(10 downto 0);
 
   signal pix_clock_s         : std_logic;
   signal vga_rst_n_s         : std_logic;
@@ -170,6 +174,8 @@ architecture rtl of top is
   signal dir_blue            : std_logic_vector(7 downto 0);
   signal dir_pixel_column    : std_logic_vector(10 downto 0);
   signal dir_pixel_row       : std_logic_vector(10 downto 0);
+  signal horizontal_direction : std_logic;
+  signal vertical_direction  : std_logic;
 
 begin
 
@@ -182,8 +188,8 @@ begin
   graphics_lenght <= conv_std_logic_vector(MEM_SIZE*8*8, GRAPH_MEM_ADDR_WIDTH);
   
   -- removed to inputs pin
-  direct_mode <= '0';
-  display_mode     <= "10";  -- 01 - text mode, 10 - graphics mode, 11 - text & graphics
+  --direct_mode <= '0';
+  --display_mode     <= "01";  -- 01 - text mode, 10 - graphics mode, 11 - text & graphics
   
   font_size        <= x"1";
   show_frame       <= '1';
@@ -225,14 +231,14 @@ begin
     clk_i              => clk_i,
     reset_n_i          => reset_n_i,
     --
-    direct_mode_i      => direct_mode,
+    direct_mode_i      => direct_mode_i,
     dir_red_i          => dir_red,
     dir_green_i        => dir_green,
     dir_blue_i         => dir_blue,
     dir_pixel_column_o => dir_pixel_column,
     dir_pixel_row_o    => dir_pixel_row,
     -- cfg
-    display_mode_i     => display_mode,  -- 01 - text mode, 10 - graphics mode, 11 - text & graphics
+    display_mode_i     => display_mode_i,  -- 01 - text mode, 10 - graphics mode, 11 - text & graphics
     -- text mode interface
     text_addr_i        => char_address,
     text_data_i        => char_value,
@@ -388,9 +394,9 @@ begin
 	process (pixel_signal, reset_n_i) begin
 		if (reset_n_i = '0') then
 			column_counter <= (others => '0');
-			row_counter <= (others => '0');
+			row_counter <= (others => '0');		
 		elsif (rising_edge(pixel_signal)) then
-			if (column_counter < 20 - 1) then
+			if (column_counter < 20 - 1 ) then
 				column_counter <= column_counter + 1;
 			else
 				if (row_counter < 480 - 1) then
@@ -407,14 +413,39 @@ begin
 		if (reset_n_i = '0') then
 			pixel_address <= (others => '0');
 			column_rotate <= (others => '0');
+			row_rotate_upper <= conv_std_logic_vector(31, row_rotate_upper'length);
+			row_rotate_lower <= (others => '0');
+			horizontal_direction <= '1';
+			vertical_direction <= '1';
 		elsif (rising_edge(pixel_signal)) then
 			if (pixel_address < 9600 - 1) then
 				pixel_address <= pixel_address + 1;
 			else
-				if (column_rotate < 20 - 1) then
-					column_rotate <= column_rotate + 1;
+				if (row_rotate_upper < 479 and vertical_direction = '1') then
+					row_rotate_upper <= row_rotate_upper + 16;
+					row_rotate_lower <= row_rotate_lower + 16;
+				elsif (row_rotate_lower > 0 and vertical_direction = '0') then
+					row_rotate_upper <= row_rotate_upper - 16;
+					row_rotate_lower <= row_rotate_lower - 16;
 				else
-					column_rotate <= (others => '0');
+					if(vertical_direction = '1' and row_rotate_upper = 479) then
+						vertical_direction <= '0';
+					elsif (row_rotate_lower = 0) then
+						vertical_direction <= '1';
+					end if;
+				end if;
+			
+				if (column_rotate < 20 - 1 and horizontal_direction = '1') then
+					column_rotate <= column_rotate + 1;
+				elsif (column_rotate > 0 and horizontal_direction = '0') then
+					column_rotate <= column_rotate - 1;
+				else
+					if(horizontal_direction = '1') then
+						horizontal_direction <= '0';
+					else
+						horizontal_direction <= '1';
+					end if;
+					--column_rotate <= (others => '0');
 				end if;
 				pixel_address <= (others => '0');
 			end if;
@@ -422,7 +453,7 @@ begin
 	end process;
 	
 	process (column_counter, row_counter) begin
-		if (row_counter > 224 and row_counter < 256 and column_counter = column_rotate) then
+		if (row_counter > row_rotate_lower and row_counter < row_rotate_upper and column_counter = column_rotate) then
 			pixel_value <= (others => '1');
 		else
 			pixel_value <= (others => '0');

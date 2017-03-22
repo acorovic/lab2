@@ -1,16 +1,16 @@
-Release 14.6 - xst P.68d (nt64)
+Release 14.6 - xst P.68d (nt)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.06 secs
+Total CPU time to Xst completion: 0.07 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.06 secs
+Total CPU time to Xst completion: 0.07 secs
  
 --> Reading design: top.prj
 
@@ -108,40 +108,40 @@ Cores Search Directories           : {"../../source/coregen/char_rom"  }
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Parsing VHDL file "C:\Users\student.DOMAIN\Desktop\lab2_test\lab2\source\rtl\vhdl\vga_sync.vhd" into library work
+Parsing VHDL file "C:\Users\student.DOMAIN\Desktop\lprs2RA54\latest\lab2\source\rtl\vhdl\vga_sync.vhd" into library work
 Parsing entity <vga_sync>.
 Parsing architecture <rtl> of entity <vga_sync>.
-Parsing VHDL file "C:\Users\student.DOMAIN\Desktop\lab2_test\lab2\source\coregen\dcm75MHz.vhd" into library work
+Parsing VHDL file "C:\Users\student.DOMAIN\Desktop\lprs2RA54\latest\lab2\source\coregen\dcm75MHz.vhd" into library work
 Parsing entity <dcm75MHz>.
 Parsing architecture <xilinx> of entity <dcm75mhz>.
-Parsing VHDL file "C:\Users\student.DOMAIN\Desktop\lab2_test\lab2\source\coregen\dcm50MHz.vhd" into library work
+Parsing VHDL file "C:\Users\student.DOMAIN\Desktop\lprs2RA54\latest\lab2\source\coregen\dcm50MHz.vhd" into library work
 Parsing entity <dcm50MHz>.
 Parsing architecture <xilinx> of entity <dcm50mhz>.
-Parsing VHDL file "C:\Users\student.DOMAIN\Desktop\lab2_test\lab2\source\coregen\dcm25MHz.vhd" into library work
+Parsing VHDL file "C:\Users\student.DOMAIN\Desktop\lprs2RA54\latest\lab2\source\coregen\dcm25MHz.vhd" into library work
 Parsing entity <dcm25MHz>.
 Parsing architecture <xilinx> of entity <dcm25mhz>.
-Parsing VHDL file "C:\Users\student.DOMAIN\Desktop\lab2_test\lab2\source\coregen\dcm108MHz.vhd" into library work
+Parsing VHDL file "C:\Users\student.DOMAIN\Desktop\lprs2RA54\latest\lab2\source\coregen\dcm108MHz.vhd" into library work
 Parsing entity <dcm108MHz>.
 Parsing architecture <xilinx> of entity <dcm108mhz>.
-Parsing VHDL file "C:\Users\student.DOMAIN\Desktop\lab2_test\lab2\source\coregen\char_rom\char_rom_def.vhd" into library work
+Parsing VHDL file "C:\Users\student.DOMAIN\Desktop\lprs2RA54\latest\lab2\source\coregen\char_rom\char_rom_def.vhd" into library work
 Parsing entity <char_rom_def>.
 Parsing architecture <char_rom_def_a> of entity <char_rom_def>.
-Parsing VHDL file "C:\Users\student.DOMAIN\Desktop\lab2_test\lab2\source\rtl\vhdl\vga.vhd" into library work
+Parsing VHDL file "C:\Users\student.DOMAIN\Desktop\lprs2RA54\latest\lab2\source\rtl\vhdl\vga.vhd" into library work
 Parsing entity <vga>.
 Parsing architecture <rtl> of entity <vga>.
-Parsing VHDL file "C:\Users\student.DOMAIN\Desktop\lab2_test\lab2\source\rtl\vhdl\text_mem.vhd" into library work
+Parsing VHDL file "C:\Users\student.DOMAIN\Desktop\lprs2RA54\latest\lab2\source\rtl\vhdl\text_mem.vhd" into library work
 Parsing entity <text_mem>.
 Parsing architecture <arc_text_mem> of entity <text_mem>.
-Parsing VHDL file "C:\Users\student.DOMAIN\Desktop\lab2_test\lab2\source\rtl\vhdl\graphics_mem.vhd" into library work
+Parsing VHDL file "C:\Users\student.DOMAIN\Desktop\lprs2RA54\latest\lab2\source\rtl\vhdl\graphics_mem.vhd" into library work
 Parsing entity <graphics_mem>.
 Parsing architecture <arc_graphics_mem> of entity <graphics_mem>.
-Parsing VHDL file "C:\Users\student.DOMAIN\Desktop\lab2_test\lab2\source\rtl\vhdl\char_rom.vhd" into library work
+Parsing VHDL file "C:\Users\student.DOMAIN\Desktop\lprs2RA54\latest\lab2\source\rtl\vhdl\char_rom.vhd" into library work
 Parsing entity <char_rom>.
 Parsing architecture <Behavioral> of entity <char_rom>.
-Parsing VHDL file "C:\Users\student.DOMAIN\Desktop\lab2_test\lab2\source\rtl\vhdl\vga_top.vhd" into library work
+Parsing VHDL file "C:\Users\student.DOMAIN\Desktop\lprs2RA54\latest\lab2\source\rtl\vhdl\vga_top.vhd" into library work
 Parsing entity <vga_top>.
 Parsing architecture <rtl> of entity <vga_top>.
-Parsing VHDL file "C:\Users\student.DOMAIN\Desktop\lab2_test\lab2\source\rtl\vhdl\top.vhd" into library work
+Parsing VHDL file "C:\Users\student.DOMAIN\Desktop\lprs2RA54\latest\lab2\source\rtl\vhdl\top.vhd" into library work
 Parsing entity <top>.
 Parsing architecture <rtl> of entity <top>.
 
@@ -150,14 +150,14 @@ Parsing architecture <rtl> of entity <top>.
 =========================================================================
 
 Elaborating entity <top> (architecture <rtl>) with generics from library <work>.
-WARNING:HDLCompiler:1127 - "C:\Users\student.DOMAIN\Desktop\lab2_test\lab2\source\rtl\vhdl\top.vhd" Line 177: Assignment to message_lenght ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\student.DOMAIN\Desktop\lab2_test\lab2\source\rtl\vhdl\top.vhd" Line 182: Assignment to graphics_lenght ignored, since the identifier is never used
-WARNING:HDLCompiler:89 - "C:\Users\student.DOMAIN\Desktop\lab2_test\lab2\source\rtl\vhdl\top.vhd" Line 106: <oddr2> remains a black-box since it has no binding entity.
+WARNING:HDLCompiler:1127 - "C:\Users\student.DOMAIN\Desktop\lprs2RA54\latest\lab2\source\rtl\vhdl\top.vhd" Line 183: Assignment to message_lenght ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\student.DOMAIN\Desktop\lprs2RA54\latest\lab2\source\rtl\vhdl\top.vhd" Line 188: Assignment to graphics_lenght ignored, since the identifier is never used
+WARNING:HDLCompiler:89 - "C:\Users\student.DOMAIN\Desktop\lprs2RA54\latest\lab2\source\rtl\vhdl\top.vhd" Line 108: <oddr2> remains a black-box since it has no binding entity.
 
 Elaborating entity <vga_top> (architecture <rtl>) with generics from library <work>.
 
 Elaborating entity <vga> (architecture <rtl>) with generics from library <work>.
-WARNING:HDLCompiler:89 - "C:\Users\student.DOMAIN\Desktop\lab2_test\lab2\source\rtl\vhdl\vga.vhd" Line 123: <srl16> remains a black-box since it has no binding entity.
+WARNING:HDLCompiler:89 - "C:\Users\student.DOMAIN\Desktop\lprs2RA54\latest\lab2\source\rtl\vhdl\vga.vhd" Line 123: <srl16> remains a black-box since it has no binding entity.
 
 Elaborating entity <vga_sync> (architecture <rtl>) with generics from library <work>.
 
@@ -166,29 +166,31 @@ Elaborating entity <dcm25MHz> (architecture <xilinx>) from library <work>.
 Elaborating entity <char_rom> (architecture <Behavioral>) from library <work>.
 
 Elaborating entity <char_rom_def> (architecture <char_rom_def_a>) from library <work>.
-INFO:HDLCompiler:679 - "C:\Users\student.DOMAIN\Desktop\lab2_test\lab2\source\rtl\vhdl\char_rom.vhd" Line 77. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\student.DOMAIN\Desktop\lprs2RA54\latest\lab2\source\rtl\vhdl\char_rom.vhd" Line 77. Case statement is complete. others clause is never selected
 
 Elaborating entity <text_mem> (architecture <arc_text_mem>) with generics from library <work>.
 
 Elaborating entity <graphics_mem> (architecture <arc_graphics_mem>) with generics from library <work>.
-WARNING:HDLCompiler:1127 - "C:\Users\student.DOMAIN\Desktop\lab2_test\lab2\source\rtl\vhdl\vga_top.vhd" Line 301: Assignment to grid_size ignored, since the identifier is never used
-WARNING:HDLCompiler:92 - "C:\Users\student.DOMAIN\Desktop\lab2_test\lab2\source\rtl\vhdl\top.vhd" Line 319: word_address_1 should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\student.DOMAIN\Desktop\lab2_test\lab2\source\rtl\vhdl\top.vhd" Line 321: word_address_2 should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\student.DOMAIN\Desktop\lab2_test\lab2\source\rtl\vhdl\top.vhd" Line 323: word_address_3 should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\student.DOMAIN\Desktop\lab2_test\lab2\source\rtl\vhdl\top.vhd" Line 325: word_address_4 should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\student.DOMAIN\Desktop\lab2_test\lab2\source\rtl\vhdl\top.vhd" Line 447: column_rotate should be on the sensitivity list of the process
+WARNING:HDLCompiler:1127 - "C:\Users\student.DOMAIN\Desktop\lprs2RA54\latest\lab2\source\rtl\vhdl\vga_top.vhd" Line 301: Assignment to grid_size ignored, since the identifier is never used
+WARNING:HDLCompiler:92 - "C:\Users\student.DOMAIN\Desktop\lprs2RA54\latest\lab2\source\rtl\vhdl\top.vhd" Line 325: word_address_1 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\student.DOMAIN\Desktop\lprs2RA54\latest\lab2\source\rtl\vhdl\top.vhd" Line 327: word_address_2 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\student.DOMAIN\Desktop\lprs2RA54\latest\lab2\source\rtl\vhdl\top.vhd" Line 329: word_address_3 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\student.DOMAIN\Desktop\lprs2RA54\latest\lab2\source\rtl\vhdl\top.vhd" Line 331: word_address_4 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\student.DOMAIN\Desktop\lprs2RA54\latest\lab2\source\rtl\vhdl\top.vhd" Line 456: row_rotate_lower should be on the sensitivity list of the process
 
 =========================================================================
 *                           HDL Synthesis                               *
 =========================================================================
 
 Synthesizing Unit <top>.
-    Related source file is "C:\Users\student.DOMAIN\Desktop\lab2_test\lab2\source\rtl\vhdl\top.vhd".
+    Related source file is "C:\Users\student.DOMAIN\Desktop\lprs2RA54\latest\lab2\source\rtl\vhdl\top.vhd".
         RES_TYPE = 1
         TEXT_MEM_DATA_WIDTH = 6
         GRAPH_MEM_DATA_WIDTH = 32
-INFO:Xst:3210 - "C:\Users\student.DOMAIN\Desktop\lab2_test\lab2\source\rtl\vhdl\top.vhd" line 213: Output port <dir_pixel_row_o> of the instance <vga_top_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\student.DOMAIN\Desktop\lab2_test\lab2\source\rtl\vhdl\top.vhd" line 213: Output port <vga_rst_n_o> of the instance <vga_top_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\student.DOMAIN\Desktop\lprs2RA54\latest\lab2\source\rtl\vhdl\top.vhd" line 219: Output port <dir_pixel_row_o> of the instance <vga_top_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\student.DOMAIN\Desktop\lprs2RA54\latest\lab2\source\rtl\vhdl\top.vhd" line 219: Output port <vga_rst_n_o> of the instance <vga_top_i> is unconnected or connected to loadless signal.
+    Found 1-bit register for signal <horizontal_direction>.
+    Found 1-bit register for signal <vertical_direction>.
     Found 14-bit register for signal <word_address_1>.
     Found 14-bit register for signal <char_address>.
     Found 14-bit register for signal <word_address_3>.
@@ -196,54 +198,64 @@ INFO:Xst:3210 - "C:\Users\student.DOMAIN\Desktop\lab2_test\lab2\source\rtl\vhdl\
     Found 11-bit register for signal <column_counter>.
     Found 11-bit register for signal <row_counter>.
     Found 11-bit register for signal <column_rotate>.
+    Found 11-bit register for signal <row_rotate_lower>.
     Found 20-bit register for signal <pixel_address>.
+    Found 11-bit register for signal <row_rotate_upper>.
     Found 14-bit register for signal <word_address_2>.
     Found 1-bit register for signal <pixel_signal>.
     Found 1-bit register for signal <frame_signal>.
     Found 32-bit register for signal <refresh>.
     Found 1-bit register for signal <refresh_signal>.
     Found 7-bit register for signal <pixel_counter>.
-    Found 14-bit adder for signal <char_address[13]_GND_5_o_add_67_OUT> created at line 309.
-    Found 32-bit adder for signal <refresh[31]_GND_5_o_add_79_OUT> created at line 335.
-    Found 14-bit adder for signal <word_address_1[13]_GND_5_o_add_83_OUT> created at line 368.
-    Found 14-bit adder for signal <word_address_2[13]_GND_5_o_add_84_OUT> created at line 369.
-    Found 14-bit adder for signal <word_address_3[13]_GND_5_o_add_85_OUT> created at line 370.
-    Found 14-bit adder for signal <word_address_4[13]_GND_5_o_add_86_OUT> created at line 371.
-    Found 7-bit adder for signal <pixel_counter[6]_GND_5_o_add_96_OUT> created at line 401.
-    Found 11-bit adder for signal <column_counter[10]_GND_5_o_add_101_OUT> created at line 416.
-    Found 11-bit adder for signal <row_counter[10]_GND_5_o_add_103_OUT> created at line 419.
-    Found 20-bit adder for signal <pixel_address[19]_GND_5_o_add_110_OUT> created at line 434.
-    Found 11-bit adder for signal <column_rotate[10]_GND_5_o_add_112_OUT> created at line 437.
-    Found 11-bit comparator greater for signal <dir_pixel_column[10]_GND_5_o_LessThan_11_o> created at line 268
-    Found 11-bit comparator greater for signal <dir_pixel_column[10]_GND_5_o_LessThan_13_o> created at line 269
-    Found 11-bit comparator greater for signal <dir_pixel_column[10]_GND_5_o_LessThan_15_o> created at line 270
-    Found 11-bit comparator greater for signal <dir_pixel_column[10]_GND_5_o_LessThan_17_o> created at line 271
-    Found 11-bit comparator greater for signal <dir_pixel_column[10]_GND_5_o_LessThan_19_o> created at line 272
-    Found 11-bit comparator greater for signal <dir_pixel_column[10]_GND_5_o_LessThan_21_o> created at line 273
-    Found 11-bit comparator greater for signal <dir_pixel_column[10]_GND_5_o_LessThan_59_o> created at line 292
-    Found 14-bit comparator greater for signal <char_address[13]_GND_5_o_LessThan_67_o> created at line 308
-    Found 14-bit comparator equal for signal <char_address[13]_word_address_1[13]_equal_71_o> created at line 319
-    Found 14-bit comparator equal for signal <char_address[13]_word_address_2[13]_equal_72_o> created at line 321
-    Found 14-bit comparator equal for signal <char_address[13]_word_address_3[13]_equal_73_o> created at line 323
-    Found 14-bit comparator equal for signal <char_address[13]_word_address_4[13]_equal_74_o> created at line 325
-    Found 32-bit comparator greater for signal <refresh[31]_GND_5_o_LessThan_79_o> created at line 334
-    Found 7-bit comparator lessequal for signal <pixel_counter[6]_GND_5_o_LessThan_96_o> created at line 400
-    Found 11-bit comparator greater for signal <column_counter[10]_GND_5_o_LessThan_101_o> created at line 415
-    Found 11-bit comparator greater for signal <row_counter[10]_GND_5_o_LessThan_103_o> created at line 418
-    Found 20-bit comparator greater for signal <pixel_address[19]_GND_5_o_LessThan_110_o> created at line 433
-    Found 11-bit comparator greater for signal <column_rotate[10]_GND_5_o_LessThan_112_o> created at line 436
-    Found 11-bit comparator greater for signal <GND_5_o_row_counter[10]_LessThan_119_o> created at line 447
-    Found 11-bit comparator greater for signal <row_counter[10]_GND_5_o_LessThan_120_o> created at line 447
-    Found 11-bit comparator equal for signal <column_counter[10]_column_rotate[10]_equal_121_o> created at line 447
+    Found 14-bit adder for signal <char_address[13]_GND_5_o_add_68_OUT> created at line 315.
+    Found 32-bit adder for signal <refresh[31]_GND_5_o_add_80_OUT> created at line 341.
+    Found 14-bit adder for signal <word_address_1[13]_GND_5_o_add_87_OUT> created at line 366.
+    Found 14-bit adder for signal <word_address_2[13]_GND_5_o_add_88_OUT> created at line 367.
+    Found 14-bit adder for signal <word_address_3[13]_GND_5_o_add_89_OUT> created at line 368.
+    Found 14-bit adder for signal <word_address_4[13]_GND_5_o_add_90_OUT> created at line 369.
+    Found 7-bit adder for signal <pixel_counter[6]_GND_5_o_add_112_OUT> created at line 385.
+    Found 11-bit adder for signal <column_counter[10]_GND_5_o_add_117_OUT> created at line 400.
+    Found 11-bit adder for signal <row_counter[10]_GND_5_o_add_119_OUT> created at line 403.
+    Found 20-bit adder for signal <pixel_address[19]_GND_5_o_add_126_OUT> created at line 422.
+    Found 11-bit adder for signal <row_rotate_upper[10]_GND_5_o_add_128_OUT> created at line 425.
+    Found 11-bit adder for signal <row_rotate_lower[10]_GND_5_o_add_129_OUT> created at line 426.
+    Found 11-bit adder for signal <column_rotate[10]_GND_5_o_add_140_OUT> created at line 439.
+    Found 11-bit subtractor for signal <GND_5_o_GND_5_o_sub_132_OUT<10:0>> created at line 428.
+    Found 11-bit subtractor for signal <GND_5_o_GND_5_o_sub_133_OUT<10:0>> created at line 429.
+    Found 11-bit subtractor for signal <GND_5_o_GND_5_o_sub_143_OUT<10:0>> created at line 441.
+    Found 11-bit comparator greater for signal <dir_pixel_column[10]_GND_5_o_LessThan_12_o> created at line 274
+    Found 11-bit comparator greater for signal <dir_pixel_column[10]_GND_5_o_LessThan_14_o> created at line 275
+    Found 11-bit comparator greater for signal <dir_pixel_column[10]_GND_5_o_LessThan_16_o> created at line 276
+    Found 11-bit comparator greater for signal <dir_pixel_column[10]_GND_5_o_LessThan_18_o> created at line 277
+    Found 11-bit comparator greater for signal <dir_pixel_column[10]_GND_5_o_LessThan_20_o> created at line 278
+    Found 11-bit comparator greater for signal <dir_pixel_column[10]_GND_5_o_LessThan_22_o> created at line 279
+    Found 11-bit comparator greater for signal <dir_pixel_column[10]_GND_5_o_LessThan_60_o> created at line 298
+    Found 14-bit comparator greater for signal <char_address[13]_GND_5_o_LessThan_68_o> created at line 314
+    Found 14-bit comparator equal for signal <char_address[13]_word_address_1[13]_equal_72_o> created at line 325
+    Found 14-bit comparator equal for signal <char_address[13]_word_address_2[13]_equal_73_o> created at line 327
+    Found 14-bit comparator equal for signal <char_address[13]_word_address_3[13]_equal_74_o> created at line 329
+    Found 14-bit comparator equal for signal <char_address[13]_word_address_4[13]_equal_75_o> created at line 331
+    Found 32-bit comparator greater for signal <refresh[31]_GND_5_o_LessThan_80_o> created at line 340
+    Found 7-bit comparator lessequal for signal <pixel_counter[6]_GND_5_o_LessThan_112_o> created at line 384
+    Found 11-bit comparator greater for signal <column_counter[10]_GND_5_o_LessThan_117_o> created at line 399
+    Found 11-bit comparator greater for signal <row_counter[10]_GND_5_o_LessThan_119_o> created at line 402
+    Found 20-bit comparator greater for signal <pixel_address[19]_GND_5_o_LessThan_126_o> created at line 421
+    Found 11-bit comparator greater for signal <row_rotate_upper[10]_GND_5_o_LessThan_128_o> created at line 424
+    Found 11-bit comparator greater for signal <GND_5_o_row_rotate_lower[10]_LessThan_131_o> created at line 427
+    Found 11-bit comparator greater for signal <column_rotate[10]_GND_5_o_LessThan_140_o> created at line 438
+    Found 11-bit comparator greater for signal <GND_5_o_column_rotate[10]_LessThan_142_o> created at line 440
+    Found 11-bit comparator greater for signal <row_rotate_lower[10]_row_counter[10]_LessThan_154_o> created at line 456
+    Found 11-bit comparator greater for signal <row_counter[10]_row_rotate_upper[10]_LessThan_155_o> created at line 456
+    Found 11-bit comparator equal for signal <column_counter[10]_column_rotate[10]_equal_156_o> created at line 456
     Summary:
-	inferred  11 Adder/Subtractor(s).
-	inferred 165 D-type flip-flop(s).
-	inferred  21 Comparator(s).
-	inferred  26 Multiplexer(s).
+	inferred  13 Adder/Subtractor(s).
+	inferred 189 D-type flip-flop(s).
+	inferred  24 Comparator(s).
+	inferred  25 Multiplexer(s).
 Unit <top> synthesized.
 
 Synthesizing Unit <vga_top>.
-    Related source file is "C:\Users\student.DOMAIN\Desktop\lab2_test\lab2\source\rtl\vhdl\vga_top.vhd".
+    Related source file is "C:\Users\student.DOMAIN\Desktop\lprs2RA54\latest\lab2\source\rtl\vhdl\vga_top.vhd".
         H_RES = 640
         V_RES = 480
         MEM_ADDR_WIDTH = 14
@@ -256,13 +268,17 @@ Synthesizing Unit <vga_top>.
     Found 22-bit adder for signal <txt_rom_addr_c> created at line 271.
     Found 11x11-bit multiplier for signal <n0100> created at line 267.
     Found 11x11-bit multiplier for signal <n0103> created at line 271.
+    Found 1-bit 3-to-1 multiplexer for signal <active_pixel_s_rom_out_s_MUX_75_o> created at line 221.
+WARNING:Xst:737 - Found 1-bit latch for signal <active_pixel_s>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
     Summary:
 	inferred   2 Multiplier(s).
 	inferred   2 Adder/Subtractor(s).
+	inferred   1 Latch(s).
+	inferred   1 Multiplexer(s).
 Unit <vga_top> synthesized.
 
 Synthesizing Unit <vga>.
-    Related source file is "C:\Users\student.DOMAIN\Desktop\lab2_test\lab2\source\rtl\vhdl\vga.vhd".
+    Related source file is "C:\Users\student.DOMAIN\Desktop\lprs2RA54\latest\lab2\source\rtl\vhdl\vga.vhd".
         RESOLUTION_TYPE = 1
         H_RES = 640
         V_RES = 480
@@ -272,7 +288,7 @@ Synthesizing Unit <vga>.
 Unit <vga> synthesized.
 
 Synthesizing Unit <vga_sync>.
-    Related source file is "C:\Users\student.DOMAIN\Desktop\lab2_test\lab2\source\rtl\vhdl\vga_sync.vhd".
+    Related source file is "C:\Users\student.DOMAIN\Desktop\lprs2RA54\latest\lab2\source\rtl\vhdl\vga_sync.vhd".
         HORIZONTAL_RES = 640
         VERTICAL_RES = 480
         FRAME_SIZE = 4
@@ -311,23 +327,24 @@ Synthesizing Unit <vga_sync>.
 	inferred   2 Adder/Subtractor(s).
 	inferred  58 D-type flip-flop(s).
 	inferred  12 Comparator(s).
+	inferred   3 Multiplexer(s).
 Unit <vga_sync> synthesized.
 
 Synthesizing Unit <dcm25MHz>.
-    Related source file is "C:\Users\student.DOMAIN\Desktop\lab2_test\lab2\source\coregen\dcm25MHz.vhd".
+    Related source file is "C:\Users\student.DOMAIN\Desktop\lprs2RA54\latest\lab2\source\coregen\dcm25MHz.vhd".
     Summary:
 	no macro.
 Unit <dcm25MHz> synthesized.
 
 Synthesizing Unit <char_rom>.
-    Related source file is "C:\Users\student.DOMAIN\Desktop\lab2_test\lab2\source\rtl\vhdl\char_rom.vhd".
+    Related source file is "C:\Users\student.DOMAIN\Desktop\lprs2RA54\latest\lab2\source\rtl\vhdl\char_rom.vhd".
     Found 1-bit 8-to-1 multiplexer for signal <rom_mux_output_o> created at line 67.
     Summary:
 	inferred   1 Multiplexer(s).
 Unit <char_rom> synthesized.
 
 Synthesizing Unit <text_mem>.
-    Related source file is "C:\Users\student.DOMAIN\Desktop\lab2_test\lab2\source\rtl\vhdl\text_mem.vhd".
+    Related source file is "C:\Users\student.DOMAIN\Desktop\lprs2RA54\latest\lab2\source\rtl\vhdl\text_mem.vhd".
         MEM_ADDR_WIDTH = 14
         MEM_DATA_WIDTH = 6
         MEM_SIZE = 4800
@@ -345,7 +362,7 @@ WARNING:Xst:3035 - Index value(s) does not match array range for signal <text_me
 Unit <text_mem> synthesized.
 
 Synthesizing Unit <graphics_mem>.
-    Related source file is "C:\Users\student.DOMAIN\Desktop\lab2_test\lab2\source\rtl\vhdl\graphics_mem.vhd".
+    Related source file is "C:\Users\student.DOMAIN\Desktop\lprs2RA54\latest\lab2\source\rtl\vhdl\graphics_mem.vhd".
         MEM_ADDR_WIDTH = 20
         MEM_DATA_WIDTH = 32
         MEM_SIZE = 307200
@@ -374,16 +391,17 @@ Macro Statistics
  9600x32-bit dual-port RAM                             : 1
 # Multipliers                                          : 2
  11x11-bit multiplier                                  : 2
-# Adders/Subtractors                                   : 15
- 11-bit adder                                          : 5
+# Adders/Subtractors                                   : 17
+ 11-bit adder                                          : 4
+ 11-bit addsub                                         : 3
  14-bit adder                                          : 5
  20-bit adder                                          : 1
  22-bit adder                                          : 2
  32-bit adder                                          : 1
  7-bit adder                                           : 1
-# Registers                                            : 35
- 1-bit register                                        : 16
- 11-bit register                                       : 5
+# Registers                                            : 39
+ 1-bit register                                        : 18
+ 11-bit register                                       : 7
  14-bit register                                       : 5
  20-bit register                                       : 1
  32-bit register                                       : 2
@@ -391,9 +409,11 @@ Macro Statistics
  6-bit register                                        : 1
  7-bit register                                        : 1
  8-bit register                                        : 3
-# Comparators                                          : 37
+# Latches                                              : 1
+ 1-bit latch                                           : 1
+# Comparators                                          : 40
  11-bit comparator equal                               : 1
- 11-bit comparator greater                             : 16
+ 11-bit comparator greater                             : 19
  11-bit comparator lessequal                           : 2
  12-bit comparator greater                             : 3
  12-bit comparator lessequal                           : 3
@@ -403,16 +423,19 @@ Macro Statistics
  31-bit comparator greater                             : 4
  32-bit comparator greater                             : 1
  7-bit comparator lessequal                            : 1
-# Multiplexers                                         : 36
+# Multiplexers                                         : 39
  1-bit 2-to-1 multiplexer                              : 5
+ 1-bit 3-to-1 multiplexer                              : 1
  1-bit 32-to-1 multiplexer                             : 1
  1-bit 8-to-1 multiplexer                              : 1
- 11-bit 2-to-1 multiplexer                             : 3
+ 11-bit 2-to-1 multiplexer                             : 2
  14-bit 2-to-1 multiplexer                             : 5
  20-bit 2-to-1 multiplexer                             : 1
  31-bit 2-to-1 multiplexer                             : 3
  6-bit 2-to-1 multiplexer                              : 3
- 8-bit 2-to-1 multiplexer                              : 14
+ 8-bit 2-to-1 multiplexer                              : 17
+# Xors                                                 : 1
+ 1-bit xor2                                            : 1
 
 =========================================================================
 
@@ -423,12 +446,6 @@ Macro Statistics
 Reading core <../../source/coregen/char_rom/char_rom_def.ngc>.
 Loading core <char_rom_def> for timing and area information for instance <BRAM_MEM_I>.
 INFO:Xst:1901 - Instance B6 in unit char_rom_def of type RAMB16_S9 has been replaced by RAMB16BWER
-INFO:Xst:2261 - The FF/Latch <green_r_1> in Unit <vga_sync_i> is equivalent to the following FF/Latch, which will be removed : <green_r_6> 
-INFO:Xst:2261 - The FF/Latch <red_r_0> in Unit <vga_sync_i> is equivalent to the following 2 FFs/Latches, which will be removed : <red_r_1> <red_r_3> 
-INFO:Xst:2261 - The FF/Latch <green_r_0> in Unit <vga_sync_i> is equivalent to the following 5 FFs/Latches, which will be removed : <green_r_2> <green_r_3> <green_r_4> <green_r_5> <green_r_7> 
-INFO:Xst:2261 - The FF/Latch <red_r_2> in Unit <vga_sync_i> is equivalent to the following 4 FFs/Latches, which will be removed : <red_r_4> <red_r_5> <red_r_6> <red_r_7> 
-WARNING:Xst:1710 - FF/Latch <blue_r_3> (without init value) has a constant value of 0 in block <vga_sync_i>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <blue_r_5> (without init value) has a constant value of 0 in block <vga_sync_i>. This FF/Latch will be trimmed during the optimization process.
 
 Synthesizing (advanced) Unit <graphics_mem>.
 INFO:Xst:3226 - The RAM <Mram_graphics_mem> will be implemented as a BLOCK RAM, absorbing the following register(s): <rd_value>
@@ -483,15 +500,17 @@ INFO:Xst:3226 - The RAM <Mram_text_mem> will be implemented as a BLOCK RAM, abso
 Unit <text_mem> synthesized (advanced).
 
 Synthesizing (advanced) Unit <top>.
-The following registers are absorbed into counter <word_address_1>: 1 register on signal <word_address_1>.
 The following registers are absorbed into counter <char_address>: 1 register on signal <char_address>.
-The following registers are absorbed into counter <word_address_4>: 1 register on signal <word_address_4>.
-The following registers are absorbed into counter <word_address_3>: 1 register on signal <word_address_3>.
 The following registers are absorbed into counter <column_counter>: 1 register on signal <column_counter>.
 The following registers are absorbed into counter <pixel_address>: 1 register on signal <pixel_address>.
-The following registers are absorbed into counter <word_address_2>: 1 register on signal <word_address_2>.
+The following registers are absorbed into counter <word_address_3>: 1 register on signal <word_address_3>.
+The following registers are absorbed into counter <word_address_1>: 1 register on signal <word_address_1>.
+The following registers are absorbed into counter <word_address_4>: 1 register on signal <word_address_4>.
 The following registers are absorbed into counter <row_counter>: 1 register on signal <row_counter>.
 The following registers are absorbed into counter <column_rotate>: 1 register on signal <column_rotate>.
+The following registers are absorbed into accumulator <row_rotate_lower>: 1 register on signal <row_rotate_lower>.
+The following registers are absorbed into accumulator <row_rotate_upper>: 1 register on signal <row_rotate_upper>.
+The following registers are absorbed into counter <word_address_2>: 1 register on signal <word_address_2>.
 The following registers are absorbed into counter <pixel_counter>: 1 register on signal <pixel_counter>.
 The following registers are absorbed into counter <refresh>: 1 register on signal <refresh>.
 Unit <top> synthesized (advanced).
@@ -502,8 +521,8 @@ The following registers are absorbed into counter <v_count_r>: 1 register on sig
 Unit <vga_sync> synthesized (advanced).
 
 Synthesizing (advanced) Unit <vga_top>.
-	Multiplier <Mmult_n0103> in block <vga_top> and adder/subtractor <Madd_txt_rom_addr_c_Madd> in block <vga_top> are combined into a MAC<Maddsub_n0103>.
 	Multiplier <Mmult_n0100> in block <vga_top> and adder/subtractor <Madd_graph_pixel_addr_c_Madd> in block <vga_top> are combined into a MAC<Maddsub_n0100>.
+	Multiplier <Mmult_n0103> in block <vga_top> and adder/subtractor <Madd_txt_rom_addr_c_Madd> in block <vga_top> are combined into a MAC<Maddsub_n0103>.
 Unit <vga_top> synthesized (advanced).
 
 =========================================================================
@@ -517,16 +536,19 @@ Macro Statistics
  11x11-to-20-bit MAC                                   : 1
  8x7-to-14-bit MAC                                     : 1
 # Counters                                             : 13
- 11-bit up counter                                     : 5
+ 11-bit up counter                                     : 4
+ 11-bit updown counter                                 : 1
  14-bit up counter                                     : 5
  20-bit up counter                                     : 1
  32-bit up counter                                     : 1
  7-bit up counter                                      : 1
-# Registers                                            : 45
- Flip-Flops                                            : 45
-# Comparators                                          : 37
+# Accumulators                                         : 2
+ 11-bit updown accumulator                             : 2
+# Registers                                            : 47
+ Flip-Flops                                            : 47
+# Comparators                                          : 40
  11-bit comparator equal                               : 1
- 11-bit comparator greater                             : 16
+ 11-bit comparator greater                             : 19
  11-bit comparator lessequal                           : 2
  12-bit comparator greater                             : 3
  12-bit comparator lessequal                           : 3
@@ -536,28 +558,26 @@ Macro Statistics
  31-bit comparator greater                             : 4
  32-bit comparator greater                             : 1
  7-bit comparator lessequal                            : 1
-# Multiplexers                                         : 27
+# Multiplexers                                         : 31
  1-bit 2-to-1 multiplexer                              : 5
+ 1-bit 3-to-1 multiplexer                              : 1
  1-bit 32-to-1 multiplexer                             : 1
  1-bit 8-to-1 multiplexer                              : 1
  31-bit 2-to-1 multiplexer                             : 3
  6-bit 2-to-1 multiplexer                              : 3
- 8-bit 2-to-1 multiplexer                              : 14
+ 8-bit 2-to-1 multiplexer                              : 17
+# Xors                                                 : 1
+ 1-bit xor2                                            : 1
 
 =========================================================================
 
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
-WARNING:Xst:1710 - FF/Latch <blue_r_3> (without init value) has a constant value of 0 in block <vga_sync>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <blue_r_5> (without init value) has a constant value of 0 in block <vga_sync>. This FF/Latch will be trimmed during the optimization process.
-INFO:Xst:2261 - The FF/Latch <green_r_1> in Unit <vga_sync> is equivalent to the following FF/Latch, which will be removed : <green_r_6> 
-INFO:Xst:2261 - The FF/Latch <blue_r_0> in Unit <vga_sync> is equivalent to the following 5 FFs/Latches, which will be removed : <blue_r_1> <blue_r_2> <blue_r_4> <blue_r_6> <blue_r_7> 
-INFO:Xst:2261 - The FF/Latch <red_r_2> in Unit <vga_sync> is equivalent to the following 4 FFs/Latches, which will be removed : <red_r_4> <red_r_5> <red_r_6> <red_r_7> 
-INFO:Xst:2261 - The FF/Latch <red_r_0> in Unit <vga_sync> is equivalent to the following 2 FFs/Latches, which will be removed : <red_r_1> <red_r_3> 
-INFO:Xst:2261 - The FF/Latch <green_r_0> in Unit <vga_sync> is equivalent to the following 5 FFs/Latches, which will be removed : <green_r_2> <green_r_3> <green_r_4> <green_r_5> <green_r_7> 
 
 Optimizing unit <top> ...
+
+Optimizing unit <vga_top> ...
 
 Optimizing unit <vga_sync> ...
 
@@ -593,51 +613,63 @@ INFO:Xst:2399 - RAMs <vga_top_i/graphics_mem_i/Mram_graphics_mem32>, <vga_top_i/
 INFO:Xst:2399 - RAMs <vga_top_i/graphics_mem_i/Mram_graphics_mem32>, <vga_top_i/graphics_mem_i/Mram_graphics_mem2> are equivalent, second RAM is removed
 INFO:Xst:2399 - RAMs <vga_top_i/graphics_mem_i/Mram_graphics_mem32>, <vga_top_i/graphics_mem_i/Mram_graphics_mem1> are equivalent, second RAM is removed
 INFO:Xst:2399 - RAMs <vga_top_i/graphics_mem_i/Mram_graphics_mem32>, <vga_top_i/graphics_mem_i/Mram_graphics_mem3> are equivalent, second RAM is removed
-WARNING:Xst:1710 - FF/Latch <row_counter_10> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <char_address_13> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <pixel_address_14> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <pixel_address_15> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <pixel_address_16> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <pixel_address_17> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <pixel_address_18> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <pixel_address_19> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <row_counter_9> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <row_counter_10> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <column_rotate_5> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <column_rotate_6> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <column_rotate_7> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <column_rotate_8> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <column_rotate_9> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <column_rotate_10> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <char_address_11> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <char_address_12> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <char_address_13> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <row_rotate_lower_0> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <row_rotate_lower_1> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <row_rotate_lower_2> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <row_rotate_lower_3> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <row_rotate_upper_0> (without init value) has a constant value of 1 in block <top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <vga_top_i/vga_i/vga_sync_i/h_count_r_10> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <vga_top_i/vga_i/vga_sync_i/v_count_r_10> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <word_address_1_11> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <word_address_1_12> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <word_address_1_13> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <word_address_4_13> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <word_address_4_11> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <word_address_4_12> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <word_address_3_11> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <word_address_3_12> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <word_address_3_13> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <column_counter_5> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <column_counter_6> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <column_counter_7> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <column_counter_8> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <column_counter_9> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <column_counter_10> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <word_address_4_11> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <word_address_4_12> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <word_address_4_13> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <word_address_3_11> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <word_address_3_12> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <word_address_3_13> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <word_address_1_11> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <word_address_1_12> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <word_address_1_13> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <row_rotate_upper_1> (without init value) has a constant value of 1 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <row_rotate_upper_2> (without init value) has a constant value of 1 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <row_rotate_upper_3> (without init value) has a constant value of 1 in block <top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <word_address_2_11> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <word_address_2_12> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <word_address_2_13> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <row_counter_9> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <char_address_11> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <char_address_12> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pixel_counter_5> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pixel_counter_6> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-INFO:Xst:2261 - The FF/Latch <column_counter_0> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <pixel_address_0> 
-INFO:Xst:2261 - The FF/Latch <column_counter_1> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <pixel_address_1> 
-INFO:Xst:2261 - The FF/Latch <word_address_4_0> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <word_address_2_0> 
-INFO:Xst:3203 - The FF/Latch <word_address_1_1> in Unit <top> is the opposite to the following FF/Latch, which will be removed : <word_address_3_1> 
-INFO:Xst:3203 - The FF/Latch <word_address_4_0> in Unit <top> is the opposite to the following 2 FFs/Latches, which will be removed : <word_address_1_0> <word_address_3_0> 
-INFO:Xst:3203 - The FF/Latch <word_address_4_1> in Unit <top> is the opposite to the following FF/Latch, which will be removed : <word_address_2_1> 
+INFO:Xst:2261 - The FF/Latch <vga_top_i/vga_i/vga_sync_i/blue_r_5> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <vga_top_i/vga_i/vga_sync_i/blue_r_3> 
+INFO:Xst:2261 - The FF/Latch <vga_top_i/vga_i/vga_sync_i/blue_r_7> in Unit <top> is equivalent to the following 5 FFs/Latches, which will be removed : <vga_top_i/vga_i/vga_sync_i/blue_r_6> <vga_top_i/vga_i/vga_sync_i/blue_r_4> <vga_top_i/vga_i/vga_sync_i/blue_r_2> <vga_top_i/vga_i/vga_sync_i/blue_r_1> <vga_top_i/vga_i/vga_sync_i/blue_r_0> 
+INFO:Xst:2261 - The FF/Latch <vga_top_i/vga_i/vga_sync_i/red_r_3> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <vga_top_i/vga_i/vga_sync_i/red_r_1> <vga_top_i/vga_i/vga_sync_i/red_r_0> 
+INFO:Xst:2261 - The FF/Latch <vga_top_i/vga_i/vga_sync_i/green_r_4> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <vga_top_i/vga_i/vga_sync_i/green_r_3> 
+INFO:Xst:2261 - The FF/Latch <vga_top_i/vga_i/vga_sync_i/green_r_6> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <vga_top_i/vga_i/vga_sync_i/green_r_1> 
+INFO:Xst:2261 - The FF/Latch <vga_top_i/vga_i/vga_sync_i/red_r_7> in Unit <top> is equivalent to the following 4 FFs/Latches, which will be removed : <vga_top_i/vga_i/vga_sync_i/red_r_6> <vga_top_i/vga_i/vga_sync_i/red_r_5> <vga_top_i/vga_i/vga_sync_i/red_r_4> <vga_top_i/vga_i/vga_sync_i/red_r_2> 
+INFO:Xst:2261 - The FF/Latch <vga_top_i/vga_i/vga_sync_i/green_r_7> in Unit <top> is equivalent to the following 3 FFs/Latches, which will be removed : <vga_top_i/vga_i/vga_sync_i/green_r_5> <vga_top_i/vga_i/vga_sync_i/green_r_2> <vga_top_i/vga_i/vga_sync_i/green_r_0> 
+INFO:Xst:2261 - The FF/Latch <pixel_address_0> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <column_counter_0> 
+INFO:Xst:2261 - The FF/Latch <pixel_address_1> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <column_counter_1> 
+INFO:Xst:3203 - The FF/Latch <row_rotate_upper_4> in Unit <top> is the opposite to the following FF/Latch, which will be removed : <row_rotate_lower_4> 
 
 Mapping all equations...
 Building and optimizing final netlist ...
@@ -654,8 +686,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 159
- Flip-Flops                                            : 159
+# Registers                                            : 181
+ Flip-Flops                                            : 181
 
 =========================================================================
 
@@ -678,26 +710,30 @@ Top Level Output File Name         : top.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 601
+# BELS                             : 696
 #      GND                         : 2
-#      INV                         : 11
+#      INV                         : 15
 #      LUT1                        : 89
-#      LUT2                        : 84
-#      LUT3                        : 19
-#      LUT4                        : 14
-#      LUT5                        : 37
-#      LUT6                        : 57
-#      MUXCY                       : 153
+#      LUT2                        : 96
+#      LUT3                        : 22
+#      LUT4                        : 39
+#      LUT5                        : 39
+#      LUT6                        : 88
+#      MUXCY                       : 165
+#      MUXF7                       : 1
 #      VCC                         : 2
-#      XORCY                       : 133
-# FlipFlops/Latches                : 160
-#      FD                          : 4
-#      FDC                         : 66
-#      FDCE                        : 14
-#      FDP                         : 2
-#      FDR                         : 52
-#      FDRE                        : 19
-#      FDS                         : 2
+#      XORCY                       : 138
+# FlipFlops/Latches                : 183
+#      FD                          : 1
+#      FDC                         : 29
+#      FDCE                        : 66
+#      FDE                         : 1
+#      FDPE                        : 7
+#      FDR                         : 53
+#      FDRE                        : 22
+#      FDS                         : 1
+#      FDSE                        : 1
+#      LD                          : 1
 #      ODDR2                       : 1
 # RAMS                             : 5
 #      RAMB16BWER                  : 5
@@ -705,8 +741,8 @@ Primitive and Black Box Usage:
 #      SRL16                       : 1
 # Clock Buffers                    : 4
 #      BUFG                        : 4
-# IO Buffers                       : 32
-#      IBUF                        : 1
+# IO Buffers                       : 35
+#      IBUF                        : 4
 #      IBUFG                       : 1
 #      OBUF                        : 30
 # DCMs                             : 1
@@ -721,22 +757,22 @@ Selected Device : 6slx45fgg676-2
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             160  out of  54576     0%  
- Number of Slice LUTs:                  312  out of  27288     1%  
-    Number used as Logic:               311  out of  27288     1%  
+ Number of Slice Registers:             183  out of  54576     0%  
+ Number of Slice LUTs:                  389  out of  27288     1%  
+    Number used as Logic:               388  out of  27288     1%  
     Number used as Memory:                1  out of   6408     0%  
        Number used as SRL:                1
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    329
-   Number with an unused Flip Flop:     169  out of    329    51%  
-   Number with an unused LUT:            17  out of    329     5%  
-   Number of fully used LUT-FF pairs:   143  out of    329    43%  
-   Number of unique control sets:        14
+ Number of LUT Flip Flop pairs used:    407
+   Number with an unused Flip Flop:     224  out of    407    55%  
+   Number with an unused LUT:            18  out of    407     4%  
+   Number of fully used LUT-FF pairs:   165  out of    407    40%  
+   Number of unique control sets:        25
 
 IO Utilization: 
- Number of IOs:                          32
- Number of bonded IOBs:                  32  out of    358     8%  
+ Number of IOs:                          35
+ Number of bonded IOBs:                  35  out of    358     9%  
 
 Specific Feature Utilization:
  Number of Block RAM/FIFO:                5  out of    116     4%  
@@ -762,14 +798,19 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
------------------------------------+------------------------+-------+
-Clock Signal                       | Clock buffer(FF name)  | Load  |
------------------------------------+------------------------+-------+
-clk_i                              | DCM_SP:CLKFX           | 66    |
-frame_signal                       | BUFG                   | 33    |
-refresh_signal                     | BUFG                   | 39    |
-pixel_signal                       | BUFG                   | 31    |
------------------------------------+------------------------+-------+
+---------------------------------------------------------------------------------------------------------------+----------------------------------+-------+
+Clock Signal                                                                                                   | Clock buffer(FF name)            | Load  |
+---------------------------------------------------------------------------------------------------------------+----------------------------------+-------+
+clk_i                                                                                                          | DCM_SP:CLKFX                     | 68    |
+pixel_signal                                                                                                   | BUFG                             | 46    |
+frame_signal                                                                                                   | BUFG                             | 33    |
+refresh_signal                                                                                                 | BUFG                             | 44    |
+vga_top_i/display_mode_i[1]_display_mode_i[1]_OR_22_o(vga_top_i/display_mode_i[1]_display_mode_i[1]_OR_22_o1:O)| NONE(*)(vga_top_i/active_pixel_s)| 1     |
+---------------------------------------------------------------------------------------------------------------+----------------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
 Asynchronous Control Signals Information:
 ----------------------------------------
@@ -779,9 +820,9 @@ Timing Summary:
 ---------------
 Speed Grade: -2
 
-   Minimum period: 9.518ns (Maximum Frequency: 105.069MHz)
-   Minimum input arrival time before clock: 5.061ns
-   Maximum output required time after clock: 4.346ns
+   Minimum period: 9.513ns (Maximum Frequency: 105.120MHz)
+   Minimum input arrival time before clock: 5.202ns
+   Maximum output required time after clock: 4.312ns
    Maximum combinational path delay: No path found
 
 Timing Details:
@@ -790,27 +831,53 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk_i'
-  Clock period: 9.518ns (frequency: 105.069MHz)
-  Total number of paths / destination ports: 5377 / 228
+  Clock period: 9.513ns (frequency: 105.120MHz)
+  Total number of paths / destination ports: 5568 / 238
 -------------------------------------------------------------------------
-Delay:               10.279ns (Levels of Logic = 3)
+Delay:               10.274ns (Levels of Logic = 3)
   Source:            vga_top_i/vga_i/vga_sync_i/v_count_r_8 (FF)
-  Destination:       vga_top_i/text_mem_i/Mram_text_mem3 (RAM)
+  Destination:       vga_top_i/text_mem_i/Mram_text_mem2 (RAM)
   Source Clock:      clk_i rising 0.9X
   Destination Clock: clk_i rising 0.9X
 
-  Data Path: vga_top_i/vga_i/vga_sync_i/v_count_r_8 to vga_top_i/text_mem_i/Mram_text_mem3
+  Data Path: vga_top_i/vga_i/vga_sync_i/v_count_r_8 to vga_top_i/text_mem_i/Mram_text_mem2
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDRE:C->Q             8   0.525   0.943  vga_top_i/vga_i/vga_sync_i/v_count_r_8 (vga_top_i/vga_i/vga_sync_i/v_count_r_8)
-     DSP48A1:B4->P11       5   5.145   0.949  vga_top_i/Maddsub_n0103 (vga_top_i/txt_rom_addr_c<11>)
-     LUT2:I0->O            8   0.250   1.052  vga_top_i/text_mem_i/index_t[30]_GND_22_o_LessThan_5_o1_SW2 (N30)
-     LUT6:I4->O            3   0.250   0.765  vga_top_i/text_mem_i/Mmux_index111 (vga_top_i/text_mem_i/index<7>)
-     RAMB16BWER:ADDRB8         0.400          vga_top_i/text_mem_i/Mram_text_mem3
+     DSP48A1:B4->P11       4   5.145   0.912  vga_top_i/Maddsub_n0103 (vga_top_i/txt_rom_addr_c<11>)
+     LUT2:I0->O            9   0.250   1.084  vga_top_i/text_mem_i/index_t[30]_GND_22_o_LessThan_5_o1_SW1 (N45)
+     LUT6:I4->O            3   0.250   0.765  vga_top_i/text_mem_i/Mmux_index14 (vga_top_i/text_mem_i/index<0>)
+     RAMB16BWER:ADDRB1         0.400          vga_top_i/text_mem_i/Mram_text_mem2
     ----------------------------------------
-    Total                     10.279ns (6.570ns logic, 3.709ns route)
+    Total                     10.274ns (6.570ns logic, 3.704ns route)
                                        (63.9% logic, 36.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'pixel_signal'
+  Clock period: 7.444ns (frequency: 134.336MHz)
+  Total number of paths / destination ports: 3439 / 75
+-------------------------------------------------------------------------
+Delay:               7.444ns (Levels of Logic = 5)
+  Source:            row_rotate_upper_9 (FF)
+  Destination:       row_rotate_lower_10 (FF)
+  Source Clock:      pixel_signal rising
+  Destination Clock: pixel_signal rising
+
+  Data Path: row_rotate_upper_9 to row_rotate_lower_10
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             5   0.525   1.069  row_rotate_upper_9 (row_rotate_upper_9)
+     LUT3:I0->O            6   0.235   1.331  vertical_direction_GND_5_o_AND_156_o11 (vertical_direction_GND_5_o_AND_156_o1)
+     LUT6:I0->O           19   0.254   1.537  row_rotate_upper[10]_vertical_direction_AND_154_o1 (Maccum_row_rotate_upper_lut<0>)
+     LUT4:I0->O            3   0.254   0.994  Maccum_row_rotate_lower_cy<5>11 (Maccum_row_rotate_lower_cy<5>)
+     LUT5:I2->O            1   0.235   0.682  Maccum_row_rotate_lower_cy<8>12 (Maccum_row_rotate_lower_cy<8>)
+     LUT4:I3->O            1   0.254   0.000  Maccum_row_rotate_lower_xor<10>11 (Result<10>4)
+     FDCE:D                    0.074          row_rotate_lower_10
+    ----------------------------------------
+    Total                      7.444ns (1.831ns logic, 5.613ns route)
+                                       (24.6% logic, 75.4% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'frame_signal'
@@ -828,13 +895,13 @@ Delay:               5.453ns (Levels of Logic = 7)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDR:C->Q              3   0.525   1.196  refresh_8 (refresh_8)
-     LUT5:I0->O            1   0.254   0.000  Mcompar_refresh[31]_GND_5_o_LessThan_79_o_lut<0> (Mcompar_refresh[31]_GND_5_o_LessThan_79_o_lut<0>)
-     MUXCY:S->O            1   0.215   0.000  Mcompar_refresh[31]_GND_5_o_LessThan_79_o_cy<0> (Mcompar_refresh[31]_GND_5_o_LessThan_79_o_cy<0>)
-     MUXCY:CI->O           1   0.023   0.000  Mcompar_refresh[31]_GND_5_o_LessThan_79_o_cy<1> (Mcompar_refresh[31]_GND_5_o_LessThan_79_o_cy<1>)
-     MUXCY:CI->O           1   0.023   0.000  Mcompar_refresh[31]_GND_5_o_LessThan_79_o_cy<2> (Mcompar_refresh[31]_GND_5_o_LessThan_79_o_cy<2>)
-     MUXCY:CI->O           1   0.023   0.000  Mcompar_refresh[31]_GND_5_o_LessThan_79_o_cy<3> (Mcompar_refresh[31]_GND_5_o_LessThan_79_o_cy<3>)
-     MUXCY:CI->O           2   0.235   0.726  Mcompar_refresh[31]_GND_5_o_LessThan_79_o_cy<4> (Mcompar_refresh[31]_GND_5_o_LessThan_79_o_cy<4>)
-     LUT4:I3->O           32   0.254   1.519  Mcompar_refresh[31]_GND_5_o_LessThan_79_o_cy<5> (Mcompar_refresh[31]_GND_5_o_LessThan_79_o_cy<5>)
+     LUT5:I0->O            1   0.254   0.000  Mcompar_refresh[31]_GND_5_o_LessThan_80_o_lut<0> (Mcompar_refresh[31]_GND_5_o_LessThan_80_o_lut<0>)
+     MUXCY:S->O            1   0.215   0.000  Mcompar_refresh[31]_GND_5_o_LessThan_80_o_cy<0> (Mcompar_refresh[31]_GND_5_o_LessThan_80_o_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_refresh[31]_GND_5_o_LessThan_80_o_cy<1> (Mcompar_refresh[31]_GND_5_o_LessThan_80_o_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_refresh[31]_GND_5_o_LessThan_80_o_cy<2> (Mcompar_refresh[31]_GND_5_o_LessThan_80_o_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_refresh[31]_GND_5_o_LessThan_80_o_cy<3> (Mcompar_refresh[31]_GND_5_o_LessThan_80_o_cy<3>)
+     MUXCY:CI->O           2   0.235   0.726  Mcompar_refresh[31]_GND_5_o_LessThan_80_o_cy<4> (Mcompar_refresh[31]_GND_5_o_LessThan_80_o_cy<4>)
+     LUT4:I3->O           32   0.254   1.519  Mcompar_refresh[31]_GND_5_o_LessThan_80_o_cy<5> (Mcompar_refresh[31]_GND_5_o_LessThan_80_o_cy<5>)
      FDR:R                     0.459          refresh_0
     ----------------------------------------
     Total                      5.453ns (2.012ns logic, 3.441ns route)
@@ -842,71 +909,33 @@ Delay:               5.453ns (Levels of Logic = 7)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'refresh_signal'
-  Clock period: 5.005ns (frequency: 199.797MHz)
-  Total number of paths / destination ports: 686 / 39
+  Clock period: 5.961ns (frequency: 167.757MHz)
+  Total number of paths / destination ports: 2563 / 88
 -------------------------------------------------------------------------
-Delay:               5.005ns (Levels of Logic = 3)
-  Source:            word_address_4_3 (FF)
-  Destination:       word_address_1_1 (FF)
+Delay:               5.961ns (Levels of Logic = 3)
+  Source:            word_address_3_2 (FF)
+  Destination:       word_address_4_0 (FF)
   Source Clock:      refresh_signal rising
   Destination Clock: refresh_signal rising
 
-  Data Path: word_address_4_3 to word_address_1_1
+  Data Path: word_address_3_2 to word_address_4_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q              3   0.525   1.221  word_address_4_3 (word_address_4_3)
-     LUT6:I0->O            1   0.254   0.682  GND_5_o_GND_5_o_equal_83_o<13>_SW0 (N8)
-     LUT6:I5->O           39   0.254   1.745  GND_5_o_GND_5_o_equal_83_o<13> (GND_5_o_GND_5_o_equal_83_o)
-     LUT2:I0->O            1   0.250   0.000  Mcount_word_address_1_eqn_11 (Mcount_word_address_1_eqn_1)
-     FDC:D                     0.074          word_address_1_1
+     FDCE:C->Q             3   0.525   1.221  word_address_3_2 (word_address_3_2)
+     LUT6:I0->O            1   0.254   0.682  GND_5_o_GND_5_o_equal_85_o<13>_SW0 (N13)
+     LUT6:I5->O           15   0.254   1.431  GND_5_o_GND_5_o_equal_85_o<13> (GND_5_o_GND_5_o_equal_85_o)
+     LUT4:I0->O           11   0.254   1.038  _n0377_inv1 (_n0377_inv)
+     FDPE:CE                   0.302          word_address_4_0
     ----------------------------------------
-    Total                      5.005ns (1.357ns logic, 3.648ns route)
-                                       (27.1% logic, 72.9% route)
-
-=========================================================================
-Timing constraint: Default period analysis for Clock 'pixel_signal'
-  Clock period: 5.998ns (frequency: 166.715MHz)
-  Total number of paths / destination ports: 2448 / 45
--------------------------------------------------------------------------
-Delay:               5.998ns (Levels of Logic = 17)
-  Source:            pixel_address_5 (FF)
-  Destination:       pixel_address_13 (FF)
-  Source Clock:      pixel_signal rising
-  Destination Clock: pixel_signal rising
-
-  Data Path: pixel_address_5 to pixel_address_13
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDC:C->Q              3   0.525   1.221  pixel_address_5 (pixel_address_5)
-     LUT6:I0->O            1   0.254   0.910  pixel_address[19]_GND_5_o_LessThan_110_o_inv_inv31 (pixel_address[19]_GND_5_o_LessThan_110_o_inv_inv3)
-     LUT6:I3->O           14   0.235   1.355  pixel_address[19]_GND_5_o_LessThan_110_o_inv_inv32 (pixel_address[19]_GND_5_o_LessThan_110_o_inv_inv31)
-     LUT4:I1->O            1   0.235   0.681  pixel_address[19]_GND_5_o_LessThan_110_o_inv_inv33 (pixel_address[19]_GND_5_o_LessThan_110_o_inv_inv)
-     MUXCY:CI->O           1   0.023   0.000  Mcount_pixel_address_cy<0> (Mcount_pixel_address_cy<0>)
-     MUXCY:CI->O           1   0.023   0.000  Mcount_pixel_address_cy<1> (Mcount_pixel_address_cy<1>)
-     MUXCY:CI->O           1   0.023   0.000  Mcount_pixel_address_cy<2> (Mcount_pixel_address_cy<2>)
-     MUXCY:CI->O           1   0.023   0.000  Mcount_pixel_address_cy<3> (Mcount_pixel_address_cy<3>)
-     MUXCY:CI->O           1   0.023   0.000  Mcount_pixel_address_cy<4> (Mcount_pixel_address_cy<4>)
-     MUXCY:CI->O           1   0.023   0.000  Mcount_pixel_address_cy<5> (Mcount_pixel_address_cy<5>)
-     MUXCY:CI->O           1   0.023   0.000  Mcount_pixel_address_cy<6> (Mcount_pixel_address_cy<6>)
-     MUXCY:CI->O           1   0.023   0.000  Mcount_pixel_address_cy<7> (Mcount_pixel_address_cy<7>)
-     MUXCY:CI->O           1   0.023   0.000  Mcount_pixel_address_cy<8> (Mcount_pixel_address_cy<8>)
-     MUXCY:CI->O           1   0.023   0.000  Mcount_pixel_address_cy<9> (Mcount_pixel_address_cy<9>)
-     MUXCY:CI->O           1   0.023   0.000  Mcount_pixel_address_cy<10> (Mcount_pixel_address_cy<10>)
-     MUXCY:CI->O           1   0.023   0.000  Mcount_pixel_address_cy<11> (Mcount_pixel_address_cy<11>)
-     MUXCY:CI->O           0   0.023   0.000  Mcount_pixel_address_cy<12> (Mcount_pixel_address_cy<12>)
-     XORCY:CI->O           1   0.206   0.000  Mcount_pixel_address_xor<13> (Mcount_pixel_address13)
-     FDC:D                     0.074          pixel_address_13
-    ----------------------------------------
-    Total                      5.998ns (1.831ns logic, 4.167ns route)
-                                       (30.5% logic, 69.5% route)
+    Total                      5.961ns (1.589ns logic, 4.372ns route)
+                                       (26.7% logic, 73.3% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk_i'
-  Total number of paths / destination ports: 24 / 24
+  Total number of paths / destination ports: 34 / 33
 -------------------------------------------------------------------------
-Offset:              5.061ns (Levels of Logic = 2)
+Offset:              5.202ns (Levels of Logic = 2)
   Source:            reset_n_i (PAD)
   Destination:       pixel_signal (FF)
   Destination Clock: clk_i rising 0.9X
@@ -916,17 +945,37 @@ Offset:              5.061ns (Levels of Logic = 2)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O             8   1.328   0.943  reset_n_i_IBUF (reset_n_i_IBUF)
-     INV:I->O             83   0.255   2.076  reset_n_i_inv1_INV_0 (reset_n_i_inv)
+     INV:I->O            103   0.255   2.217  reset_n_i_inv1_INV_0 (reset_n_i_inv)
      FDC:CLR                   0.459          pixel_signal
     ----------------------------------------
-    Total                      5.061ns (2.042ns logic, 3.019ns route)
-                                       (40.3% logic, 59.7% route)
+    Total                      5.202ns (2.042ns logic, 3.160ns route)
+                                       (39.3% logic, 60.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'pixel_signal'
+  Total number of paths / destination ports: 46 / 46
+-------------------------------------------------------------------------
+Offset:              5.202ns (Levels of Logic = 2)
+  Source:            reset_n_i (PAD)
+  Destination:       horizontal_direction (FF)
+  Destination Clock: pixel_signal rising
+
+  Data Path: reset_n_i to horizontal_direction
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             8   1.328   0.943  reset_n_i_IBUF (reset_n_i_IBUF)
+     INV:I->O            103   0.255   2.217  reset_n_i_inv1_INV_0 (reset_n_i_inv)
+     FDPE:PRE                  0.459          vertical_direction
+    ----------------------------------------
+    Total                      5.202ns (2.042ns logic, 3.160ns route)
+                                       (39.3% logic, 60.7% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'refresh_signal'
-  Total number of paths / destination ports: 39 / 39
+  Total number of paths / destination ports: 44 / 44
 -------------------------------------------------------------------------
-Offset:              5.061ns (Levels of Logic = 2)
+Offset:              5.202ns (Levels of Logic = 2)
   Source:            reset_n_i (PAD)
   Destination:       word_address_4_0 (FF)
   Destination Clock: refresh_signal rising
@@ -936,50 +985,50 @@ Offset:              5.061ns (Levels of Logic = 2)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O             8   1.328   0.943  reset_n_i_IBUF (reset_n_i_IBUF)
-     INV:I->O             83   0.255   2.076  reset_n_i_inv1_INV_0 (reset_n_i_inv)
-     FDC:CLR                   0.459          word_address_2_2
+     INV:I->O            103   0.255   2.217  reset_n_i_inv1_INV_0 (reset_n_i_inv)
+     FDPE:PRE                  0.459          word_address_2_0
     ----------------------------------------
-    Total                      5.061ns (2.042ns logic, 3.019ns route)
-                                       (40.3% logic, 59.7% route)
+    Total                      5.202ns (2.042ns logic, 3.160ns route)
+                                       (39.3% logic, 60.7% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'pixel_signal'
-  Total number of paths / destination ports: 31 / 31
+Timing constraint: Default OFFSET IN BEFORE for Clock 'vga_top_i/display_mode_i[1]_display_mode_i[1]_OR_22_o'
+  Total number of paths / destination ports: 2 / 1
 -------------------------------------------------------------------------
-Offset:              5.061ns (Levels of Logic = 2)
-  Source:            reset_n_i (PAD)
-  Destination:       column_counter_0 (FF)
-  Destination Clock: pixel_signal rising
+Offset:              2.620ns (Levels of Logic = 2)
+  Source:            display_mode_i<1> (PAD)
+  Destination:       vga_top_i/active_pixel_s (LATCH)
+  Destination Clock: vga_top_i/display_mode_i[1]_display_mode_i[1]_OR_22_o falling
 
-  Data Path: reset_n_i to column_counter_0
+  Data Path: display_mode_i<1> to vga_top_i/active_pixel_s
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             8   1.328   0.943  reset_n_i_IBUF (reset_n_i_IBUF)
-     INV:I->O             83   0.255   2.076  reset_n_i_inv1_INV_0 (reset_n_i_inv)
-     FDCE:CLR                  0.459          row_counter_0
+     IBUF:I->O             2   1.328   1.002  display_mode_i_1_IBUF (display_mode_i_1_IBUF)
+     LUT4:I0->O            1   0.254   0.000  vga_top_i/Mmux_active_pixel_s_rom_out_s_MUX_75_o11 (vga_top_i/active_pixel_s_rom_out_s_MUX_75_o)
+     LD:D                      0.036          vga_top_i/active_pixel_s
     ----------------------------------------
-    Total                      5.061ns (2.042ns logic, 3.019ns route)
-                                       (40.3% logic, 59.7% route)
+    Total                      2.620ns (1.618ns logic, 1.002ns route)
+                                       (61.8% logic, 38.2% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_i'
-  Total number of paths / destination ports: 27 / 27
+  Total number of paths / destination ports: 29 / 29
 -------------------------------------------------------------------------
-Offset:              4.346ns (Levels of Logic = 1)
-  Source:            vga_top_i/vga_i/vga_sync_i/blue_r_0 (FF)
+Offset:              4.312ns (Levels of Logic = 1)
+  Source:            vga_top_i/vga_i/vga_sync_i/blue_r_7 (FF)
   Destination:       blue_o<7> (PAD)
   Source Clock:      clk_i rising 0.9X
 
-  Data Path: vga_top_i/vga_i/vga_sync_i/blue_r_0 to blue_o<7>
+  Data Path: vga_top_i/vga_i/vga_sync_i/blue_r_7 to blue_o<7>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q               7   0.525   0.909  vga_top_i/vga_i/vga_sync_i/blue_r_0 (vga_top_i/vga_i/vga_sync_i/blue_r_0)
+     FDRE:C->Q             6   0.525   0.875  vga_top_i/vga_i/vga_sync_i/blue_r_7 (vga_top_i/vga_i/vga_sync_i/blue_r_7)
      OBUF:I->O                 2.912          blue_o_7_OBUF (blue_o<7>)
     ----------------------------------------
-    Total                      4.346ns (3.437ns logic, 0.909ns route)
-                                       (79.1% logic, 20.9% route)
+    Total                      4.312ns (3.437ns logic, 0.875ns route)
+                                       (79.7% logic, 20.3% route)
 
 =========================================================================
 
@@ -987,14 +1036,15 @@ Cross Clock Domains Report:
 --------------------------
 
 Clock to Setup on destination clock clk_i
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-clk_i          |   10.279|         |         |         |
-pixel_signal   |    6.049|         |         |         |
-refresh_signal |    5.057|         |         |         |
----------------+---------+---------+---------+---------+
+-----------------------------------------------------+---------+---------+---------+---------+
+                                                     | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                         |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------------------------------------------+---------+---------+---------+---------+
+clk_i                                                |   10.274|         |         |         |
+pixel_signal                                         |    6.657|         |         |         |
+refresh_signal                                       |    4.847|         |         |         |
+vga_top_i/display_mode_i[1]_display_mode_i[1]_OR_22_o|         |    1.922|         |         |
+-----------------------------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock frame_signal
 ---------------+---------+---------+---------+---------+
@@ -1009,7 +1059,7 @@ Clock to Setup on destination clock pixel_signal
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-pixel_signal   |    5.998|         |         |         |
+pixel_signal   |    7.444|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock refresh_signal
@@ -1017,20 +1067,28 @@ Clock to Setup on destination clock refresh_signal
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-refresh_signal |    5.005|         |         |         |
+refresh_signal |    5.961|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock vga_top_i/display_mode_i[1]_display_mode_i[1]_OR_22_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk_i          |         |         |    4.563|         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 7.00 secs
-Total CPU time to Xst completion: 7.15 secs
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 6.47 secs
  
 --> 
 
-Total memory usage is 283660 kilobytes
+Total memory usage is 232592 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   63 (   0 filtered)
-Number of infos    :   51 (   0 filtered)
+Number of warnings :   68 (   0 filtered)
+Number of infos    :   47 (   0 filtered)
 
